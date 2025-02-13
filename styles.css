@@ -1,0 +1,128 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(135deg, #FF9A9E, #FECFEF);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Container for all elements */
+  #container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  
+  /* Instruction styling */
+  #instruction {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Hide elements with the 'hidden' class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Large heart styling */
+  #bigHeart {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .large-heart-svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Question container styling */
+  #question {
+    margin-top: 20px;
+  }
+  #question h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #question button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #FF3366;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  #question button:hover {
+    background: #E62E5C;
+  }
+  
+  /* Message container styling */
+  #message {
+    margin-top: 20px;
+  }
+  #message h1 {
+    font-size: 2.8em;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  #message p {
+    font-size: 2em;
+    color: #fff;
+  }
+  
+  /* Floating hearts styling using a new SVG data URI for a proper heart shape */
+  .floating-heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2029.6'%3E%3Cpath%20fill='%23FF3366'%20d='M23.6,0c-2.7,0-5.1,1.1-6.6,2.9C15.5,1.1,13.1,0,10.4,0C4.7,0,0,4.7,0,10.4 c0,11.3,16,19.2,16,19.2s16-7.9,16-19.2C32,4.7,27.3,0,23.6,0z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    #instruction {
+      font-size: 1.5em;
+    }
+    #bigHeart {
+      width: 120px;
+      height: 120px;
+    }
+    #question h1 {
+      font-size: 2em;
+    }
+    #question button {
+      font-size: 1.2em;
+      padding: 8px 16px;
+    }
+    #message h1 {
+      font-size: 2.2em;
+    }
+    #message p {
+      font-size: 1.8em;
+    }
+    .floating-heart {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

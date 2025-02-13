@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romantic Interactive</title>
+  <!-- Google Font for a romantic feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="container">
+    <!-- Instruction text -->
+    <div id="instruction">Tap anywhere to spread love!</div>
+    
+    <!-- Large heart that appears after 20 taps -->
+    <div id="bigHeart" class="hidden">
+      <svg class="large-heart-svg" viewBox="0 0 512 512">
+        <path fill="#FF3366" d="M256 464l-16-14C114 336 48 270 48 184 48 113 113 48 184 48c38 0 73 18 96 46 23-28 58-46 96-46 71 0 136 65 136 136 0 86-66 152-192 266l-16 14z"/>
+      </svg>
+    </div>
+
+    <!-- Valentine question container -->
+    <div id="question" class="hidden">
+      <h1>Will you be my Valentine?</h1>
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+
+    <!-- Romantic message container -->
+    <div id="message" class="hidden">
+      <h1>You're My Everything!</h1>
+      <h1>You're My Forever Valentine!</h1>
+      <p>I promise to love you forever.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
