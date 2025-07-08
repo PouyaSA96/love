@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Romantic Interactive</title>
-  <!-- Google Font for a romantic feel -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-  <!-- GSAP Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <title>Happy Birthday</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
 </head>
+
 <body>
   <div id="container">
-    <!-- Instruction text -->
-    <div id="instruction">Tap anywhere to spread love!</div>
-    
-    <!-- Large heart that appears after 20 taps -->
+    <div id="instruction">Coming soon</div>
     <div id="bigHeart" class="hidden">
       <svg class="large-heart-svg" viewBox="0 0 512 512">
-        <path fill="#FF3366" d="M256 464l-16-14C114 336 48 270 48 184 48 113 113 48 184 48c38 0 73 18 96 46 23-28 58-46 96-46 71 0 136 65 136 136 0 86-66 152-192 266l-16 14z"/>
+        <path fill="#FF3366"
+          d="M256 464l-16-14C114 336 48 270 48 184 48 113 113 48 184 48c38 0 73 18 96 46 23-28 58-46 96-46 71 0 136 65 136 136 0 86-66 152-192 266l-16 14z" />
       </svg>
     </div>
-
-    <!-- Valentine question container -->
-    <div id="question" class="hidden">
-      <h1>Will you be my Valentine?</h1>
-      <button id="yesBtn">Yes</button>
-      <button id="noBtn">No</button>
-    </div>
-
-    <!-- Romantic message container -->
-    <div id="message" class="hidden">
-      <h1>You're My Everything!</h1>
-      <h1>You're My Forever Valentine!</h1>
-      <p>I promise to love you forever.</p>
-    </div>
   </div>
+
+  <div id="storybook" class="hidden">
+    <div id="album"></div>
+  </div>
+
+  <!-- Main Script -->
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="audio/until-i-found-you.mp3" preload="auto" loop></audio>
+  <button id="muteToggle" class="hidden">🔇</button>
+
   <script src="script.js"></script>
+  <div class="heart-rain" id="heartRain"></div>
+
+  <script>
+    const heartRainContainer = document.getElementById("heartRain");
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      heart.style.transform = `scale(${0.5 + Math.random() * 0.5})`;
+      heartRainContainer.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+  <div class="tear-overlay"></div>
+
+  <script>
+    const emojiOverlay = document.querySelector(".tear-overlay");
+    const emojis = ["🎂", "🎈", "❤️", "✨", "🥰", "💌"];
+    function createEmojiConfetti() {
+      const el = document.createElement("div");
+      el.className = "emoji-confetti";
+      el.style.left = Math.random() * 100 + "vw";
+      el.style.fontSize = (1 + Math.random() * 1.5) + "rem";
+      el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      el.style.animationDuration = (6 + Math.random() * 4) + "s";
+      emojiOverlay.appendChild(el);
+      setTimeout(() => el.remove(), 10000);
+    }
+    const emojiInterval = setInterval(createEmojiConfetti, 250);
+  </script>
 </body>
+
 </html>

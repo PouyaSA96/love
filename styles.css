@@ -1,128 +1,245 @@
-/* Basic Reset */
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #FF9A9E, #FECFEF);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#container {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+#instruction {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#bigHeart {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  margin: auto;
+  z-index: 10;
+  position: relative;
+}
+
+.large-heart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+#storybook {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff5f5, #ffeaea);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+#storybook.show {
+  display: flex;
+}
+
+#album {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+#album .page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  color: #FF3366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.page img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.floating-heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29.6'%3E%3Cpath fill='%23FF3366' d='M23.6,0c-2.7,0-5.1,1.1-6.6,2.9C15.5,1.1,13.1,0,10.4,0C4.7,0,0,4.7,0,10.4 c0,11.3,16,19.2,16,19.2s16-7.9,16-19.2C32,4.7,27.3,0,23.6,0z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 100;
+}
+
+#muteToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 200;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tear-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.emoji-confetti {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: emojiFloat 8s linear infinite;
+  opacity: 0.9;
+  user-select: none;
+  pointer-events: none;
+}
+
+@keyframes emojiFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
   }
-  
-  /* Body styling */
-  body {
-    font-family: 'Dancing Script', cursive;
-    background: linear-gradient(135deg, #FF9A9E, #FECFEF);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
+
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
   }
-  
-  /* Container for all elements */
-  #container {
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    padding: 20px;
+}
+
+@keyframes confettiFloat {
+  0% {
+    background-position: 0 0;
   }
-  
-  /* Instruction styling */
-  #instruction {
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 20px;
+
+  100% {
+    background-position: 0 600px;
   }
-  
-  /* Hide elements with the 'hidden' class */
-  .hidden {
-    display: none;
+}
+
+.page.love-letter {
+  font-family: 'Dancing Script', cursive;
+  background: #fff0f0;
+  font-size: 1.7em;
+  padding: 40px;
+  line-height: 1.6em;
+  text-align: left;
+  position: relative;
+}
+
+.page.gift {
+  background: radial-gradient(circle, #ffe0f0, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
+}
+
+.page.gift h2 {
+  font-size: 2.5em;
+  color: #ff4d6d;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #ffb6c1;
   }
-  
-  /* Large heart styling */
-  #bigHeart {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    cursor: pointer;
+
+  100% {
+    box-shadow: 0 0 20px #ff4d6d;
   }
-  .large-heart-svg {
-    width: 100%;
-    height: 100%;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
   }
-  
-  /* Question container styling */
-  #question {
-    margin-top: 20px;
+
+  to {
+    transform: translateY(-10px);
   }
-  #question h1 {
-    font-size: 2.5em;
-    color: #fff;
-    margin-bottom: 20px;
+}
+
+.heart-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  width: 12px;
+  aspect-ratio: 32 / 29.6;
+  /* maintain perfect heart shape */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 29.6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FF3366' d='M23.6,0c-2.7,0-5.1,1.1-6.6,2.9C15.5,1.1,13.1,0,10.4,0C4.7,0,0,4.7,0,10.4c0,11.3,16,19.2,16,19.2s16-7.9,16-19.2C32,4.7,27.3,0,23.6,0z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  animation: fallHeart linear infinite;
+  pointer-events: none;
+  background-position: center;
+
+}
+
+@keyframes fallHeart {
+  0% {
+    transform: translateY(-50px) rotate(0deg) scale(0.8);
+    opacity: 1;
   }
-  #question button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    background: #FF3366;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s;
+
+  100% {
+    transform: translateY(110vh) rotate(360deg) scale(1);
+    opacity: 0;
   }
-  #question button:hover {
-    background: #E62E5C;
-  }
-  
-  /* Message container styling */
-  #message {
-    margin-top: 20px;
-  }
-  #message h1 {
-    font-size: 2.8em;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  #message p {
-    font-size: 2em;
-    color: #fff;
-  }
-  
-  /* Floating hearts styling using a new SVG data URI for a proper heart shape */
-  .floating-heart {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2029.6'%3E%3Cpath%20fill='%23FF3366'%20d='M23.6,0c-2.7,0-5.1,1.1-6.6,2.9C15.5,1.1,13.1,0,10.4,0C4.7,0,0,4.7,0,10.4 c0,11.3,16,19.2,16,19.2s16-7.9,16-19.2C32,4.7,27.3,0,23.6,0z'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 600px) {
-    #instruction {
-      font-size: 1.5em;
-    }
-    #bigHeart {
-      width: 120px;
-      height: 120px;
-    }
-    #question h1 {
-      font-size: 2em;
-    }
-    #question button {
-      font-size: 1.2em;
-      padding: 8px 16px;
-    }
-    #message h1 {
-      font-size: 2.2em;
-    }
-    #message p {
-      font-size: 1.8em;
-    }
-    .floating-heart {
-      width: 25px;
-      height: 25px;
-    }
-  }
-  
+}
