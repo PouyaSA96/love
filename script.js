@@ -75,7 +75,7 @@ function showStorybook() {
   album.innerHTML = "";
 
   const pages = [
-    "<div class='tear-overlay'></div>",
+    "<div class='page gift'><h5>This is a Love story!</h5></div>",
 
     "🎉 On July 19, 1997... someone special was born.",
     "👶 Baby steps... <br><img src='images/baby.jpg' alt='Baby' />",
