@@ -2,13 +2,13 @@ let tapCount = 0;
 let largeHeartShown = false;
 
 document.body.addEventListener("click", (e) => {
-  // handleInteraction(e.clientX, e.clientY);
+  handleInteraction(e.clientX, e.clientY);
 });
 
 // Also support touch for iPhones
 document.body.addEventListener("touchstart", (e) => {
   const touch = e.touches[0];
-  // handleInteraction(touch.clientX, touch.clientY);
+  handleInteraction(touch.clientX, touch.clientY);
 });
 
 function handleInteraction(x, y) {
@@ -79,14 +79,14 @@ function showStorybook() {
 
     "🎉 On July 19, 1997... someone special was born.",
     "👶 Baby steps... <br><img src='images/baby.jpg' alt='Baby' />",
-    "🎓 She came to Sydney for her dreams.",
-    "✈️ He came from Tehran chasing a new life.",
-    "🌟 1st Dec 2022 – Fate said <em>hello</em>.",
-    "💘 And every page since... has been us.",
-    "🌈 Happy Birthday, My Love",
-    "💌 With all my love, Pouya",
+    "🎓 She came to Sydney for her dreams. <br><img src='images/ghazaal.jpg' alt='Baby' />",
+    "✈️ He came to Sydney chasing a new life. <br><img src='images/pouya.jpg' alt='Baby' />",
+    "🌟 1st Dec 2022 – Fate said <em>hello</em>. <br><img src='images/dec.jpg' alt='Baby' />",
+    "💘 And every page since... has been us. <br><img src='images/us.jpg' alt='Baby' />",
+    "🌈 Happy Birthday, My Love <br><img src='images/cake.png' alt='Baby' />",
+    "💌 With all my love, Pouya <br><img src='images/love.jpg' alt='Baby' />",
     "<div class='page love-letter'>Dear love,<br><br>Every day with you feels like a new page of magic, hope, and joy. You light up my life in ways words can't capture. Thank you for being born, for existing, and for loving me back.<br><br>Forever yours,<br>❤️ Pouya</div>",
-    "<div class='page gift'><h2>🎁 Surprise Coming Soon!</h2><p>Turn the page to see what's next...</p></div>"
+    "<div class='page gift'><h5>🎁 Surprise Coming Soon!</h5></div>"
 
   ];
 
