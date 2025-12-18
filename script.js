@@ -1,11 +1,11 @@
 let tapCount = 0;
 let largeHeartShown = false;
 
+// Click + touch support (desktop + iPhone)
 document.body.addEventListener("click", (e) => {
   handleInteraction(e.clientX, e.clientY);
 });
 
-// Also support touch for iPhones
 document.body.addEventListener("touchstart", (e) => {
   const touch = e.touches[0];
   handleInteraction(touch.clientX, touch.clientY);
@@ -15,14 +15,19 @@ function handleInteraction(x, y) {
   createFloatingHeart(x, y);
   tapCount++;
 
+  // Start background music on first real user interaction (browser autoplay rules)
   const bgMusic = document.getElementById("bgMusic");
   if (bgMusic && bgMusic.paused) {
     bgMusic.volume = 0;
-    bgMusic.play().then(() => {
-      gsap.to(bgMusic, { volume: 0.5, duration: 3 });
-    }).catch(e => console.warn("Blocked:", e));
+    bgMusic
+      .play()
+      .then(() => {
+        gsap.to(bgMusic, { volume: 0.5, duration: 3 });
+      })
+      .catch((e) => console.warn("Blocked:", e));
   }
 
+  // After enough taps, show the big heart to "enter" the book
   if (tapCount >= 20 && !largeHeartShown) {
     largeHeartShown = true;
     showLargeHeart();
@@ -48,7 +53,7 @@ function createFloatingHeart(x, y) {
     rotation: rotation,
     opacity: 0,
     ease: "power1.out",
-    onComplete: () => heart.remove()
+    onComplete: () => heart.remove(),
   });
 }
 
@@ -62,11 +67,62 @@ function showLargeHeart() {
 
   bigHeart.addEventListener("click", () => {
     bigHeart.classList.add("hidden");
-    clearInterval(emojiInterval); // ✅ stops emoji confetti
-    document.querySelector(".tear-overlay")?.remove(); // ✅ removes existing emojis
+
+    // Stop the extra confetti emoji layer when entering the book (cleaner pages)
+    try {
+      clearInterval(emojiInterval);
+    } catch (_) {}
+    document.querySelector(".tear-overlay")?.remove();
+
     showStorybook();
   });
 }
+
+// ------------------------------
+// 2025 Month-by-month scrapbook
+// ------------------------------
+
+const MONTHS_2025 = [
+  { month: "January", img: "images/jan.jpg", text: "❤️ Remember our January adventure in Cairns? You were so cute. ❤️" },
+  { month: "February", img: "images/feb.jpg", text: "❤️ Remember how we spent Valentine’s Day on Cockatoo Island? You were so cute. ❤️" },
+  { month: "March", img: "images/march.jpg", text: "❤️ Remember March with your family? You were so cute in the park. ❤️" },
+  { month: "April", img: "images/april.jpg", text: "❤️ Remember April with my family? You were so cute at the Easter Show. ❤️" },
+  { month: "May", img: "images/may.jpg", text: "❤️ Remember May when you travelled? You were so cute at the airport. ❤️" },
+  { month: "June", img: "images/june.jpg", text: "❤️ Remember June when we were apart? It was a sad time, but you were still so cute. ❤️" },
+  { month: "July", img: "images/july.jpg", text: "❤️ Remember our birthdays together? You were so cute under the stars. ❤️" },
+  { month: "August", img: "images/aug.jpg", text: "❤️ Remember August together? You were so cute at the restaurant. ❤️" },
+  { month: "September", img: "images/sep.jpg", text: "❤️ Remember September together? You were so cute in the park near the bridge. ❤️" },
+  { month: "October", img: "images/oct.jpg", text: "❤️ Remember our October trip to Orange? You were so cute—my cutest little flower. ❤️" },
+  { month: "November", img: "images/nov.jpg", text: "❤️ Remember November together? You were so cute—the cutest in the whole world. ❤️" },
+  { month: "December", img: "images/dec.jpg", text: "❤️ Remember December together? You were the cutest angel. ❤️" },
+];
+
+
+function fmtToday() {
+  return new Date().toLocaleDateString("en-AU", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+function renderMonthPage({ month, img, text }) {
+  return `
+    <div class="month-title">${month} 2025</div>
+    <div class="month-photo">
+      <div class="photo-placeholder">Drop image here:<br><strong>${img}</strong></div>
+      <img
+        src="${img}"
+        alt="${month} 2025"
+        onload="this.previousElementSibling.style.display='none';"
+        onerror="this.style.display='none'; this.previousElementSibling.innerHTML='Missing image:<br><strong>${img}</strong>';"
+      />
+    </div>
+    <div class="month-text">${text}</div>
+  `;
+}
+
 function showStorybook() {
   document.getElementById("container").classList.add("hidden");
   document.getElementById("storybook").classList.add("show");
@@ -74,32 +130,52 @@ function showStorybook() {
   const album = document.getElementById("album");
   album.innerHTML = "";
 
+  const today = fmtToday();
+
   const pages = [
-    "<div class='page gift'><h5>This is a Love story!</h5></div>",
-
-    "🎉 On July 19, 1997... someone special was born.",
-    "👶 Baby steps... <br><img src='images/baby.jpg' alt='Baby' />",
-    "🎓 She came to Sydney for her dreams. <br><img src='images/ghazaal.jpg' alt='Baby' />",
-    "✈️ He came to Sydney chasing a new life. <br><img src='images/pouya.jpg' alt='Baby' />",
-    "🌟 1st Dec 2022 – Fate said <em>hello</em>. <br><img src='images/dec.jpg' alt='Baby' />",
-    "💘 And every page since... has been us. <br><img src='images/us.jpg' alt='Baby' />",
-    "🌈 Happy Birthday, My Love <br><img src='images/cake.png' alt='Baby' />",
-    "💌 With all my love, Pouya <br><img src='images/love.jpg' alt='Baby' />",
-    "<div class='page love-letter'>Dear love,<br><br>Every day with you feels like a new page of magic, hope, and joy. You light up my life in ways words can't capture. Thank you for being born, for existing, and for loving me back.<br><br>Forever yours,<br>❤️ Pouya</div>",
-    "<div class='page gift'><h5>🎁 Surprise Coming Soon!</h5></div>"
-
+    {
+      className: "cover",
+      html: `
+        <h5>Happy Anniversary ❤️</h5>
+        <div class="cover-sub">A little scrapbook of our LOVE in 2025</div>
+        <div class="cover-date">${today}</div>
+        <div class="cover-hint">(Swipe / drag to flip)</div>
+      `,
+    },
+    {
+      className: "intro",
+      html: `
+        <div class="intro-title">Twelve months. One us. One LOVE</div>
+      `,
+    },
+    ...MONTHS_2025.map((m) => ({ className: "month-page", html: renderMonthPage(m) })),
+    {
+      className: "love-letter",
+      html: `
+        <div class="letter-title">One more thing…</div>
+        <div class="letter-body">
+          Thank you for being my favorite person in every season.
+          <br><br>
+          Here’s to more months, more memories, and more “how are you still this cute?” moments.
+          <br><br>
+          Forever yours,<br><br>❤️ Pouya
+        </div>
+      `,
+    },
+    {
+      className: "gift",
+      html: `<h5>🎁 Next chapter: loading…</h5><div class="gift-sub">(I’m not done loving you.)</div>`,
+    },
   ];
 
   const pageElements = [];
-
-  for (const text of pages) {
+  for (const p of pages) {
     const page = document.createElement("div");
-    page.className = "page";
-    page.innerHTML = text;
+    page.className = `page${p.className ? " " + p.className : ""}`;
+    page.innerHTML = p.html;
     pageElements.push(page);
   }
 
-  // Delay init by a frame to make sure album is visible
   requestAnimationFrame(() => {
     const pageFlip = new St.PageFlip(album, {
       width: 300,
@@ -116,20 +192,19 @@ function showStorybook() {
     pageFlip.loadFromHTML(pageElements);
     launchConfetti();
 
-
-    // Mute Toggle
+    // Mute Toggle (fixes the old scope bug)
+    const bgMusic = document.getElementById("bgMusic");
     const muteButton = document.getElementById("muteToggle");
-    muteButton.classList.remove("hidden");
-    muteButton.addEventListener("click", () => {
-      if (bgMusic.muted) {
-        bgMusic.muted = false;
-        muteButton.textContent = "🔇";
-      } else {
-        bgMusic.muted = true;
-        muteButton.textContent = "🔊";
-      }
-    });
 
+    if (muteButton && bgMusic) {
+      muteButton.classList.remove("hidden");
+      muteButton.textContent = bgMusic.muted ? "🔇" : "🔊";
+
+      muteButton.addEventListener("click", () => {
+        bgMusic.muted = !bgMusic.muted;
+        muteButton.textContent = bgMusic.muted ? "🔇" : "🔊";
+      });
+    }
   });
 }
 
@@ -138,11 +213,11 @@ function launchConfetti() {
   canvas.id = "confetti-canvas";
   document.body.appendChild(canvas);
 
-  canvas.style.position = 'fixed';
+  canvas.style.position = "fixed";
   canvas.style.top = 0;
   canvas.style.left = 0;
-  canvas.style.width = '100%';
-  canvas.style.height = '100%';
+  canvas.style.width = "100%";
+  canvas.style.height = "100%";
   canvas.style.zIndex = 100;
   canvas.style.pointerEvents = "none";
 
@@ -150,6 +225,6 @@ function launchConfetti() {
   myConfetti({
     particleCount: 150,
     spread: 120,
-    origin: { y: 0.6 }
+    origin: { y: 0.6 },
   });
 }

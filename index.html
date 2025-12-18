@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday</title>
+  <title>Happy Anniversary</title>
   <link rel="shortcut icon" id="bb-favicon" href="images/favicon.ico" />
 
   <!-- Fonts -->
@@ -21,7 +21,7 @@
 
 <body>
   <div id="container">
-    <div id="instruction">Tap anywhere to spread love!</div>
+    <div id="instruction">Tap anywhere to open our 2025 scrapbook ✨</div>
     <div id="bigHeart" class="hidden">
       <svg class="large-heart-svg" viewBox="0 0 512 512">
         <path fill="#FF3366"
@@ -34,15 +34,13 @@
     <div id="album"></div>
   </div>
 
-  <!-- Main Script -->
-
   <!-- Background Music -->
   <audio id="bgMusic" src="audio/until-i-found-you.mp3" preload="auto" loop></audio>
   <button id="muteToggle" class="hidden">🔇</button>
 
   <script src="script.js"></script>
-  <div class="heart-rain" id="heartRain"></div>
 
+  <div class="heart-rain" id="heartRain"></div>
   <script>
     const heartRainContainer = document.getElementById("heartRain");
     function createHeart() {
@@ -56,11 +54,11 @@
     }
     setInterval(createHeart, 300);
   </script>
-  <div class="tear-overlay"></div>
 
+  <div class="tear-overlay"></div>
   <script>
     const emojiOverlay = document.querySelector(".tear-overlay");
-    const emojis = ["🎂", "🎈", "❤️", "✨", "🥰", "💌"];
+    const emojis = ["🥂", "❤️", "✨", "🥰", "💌"];
     function createEmojiConfetti() {
       const el = document.createElement("div");
       el.className = "emoji-confetti";

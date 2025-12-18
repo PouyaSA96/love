@@ -15,9 +15,7 @@ body {
   align-items: center;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
 #container {
   text-align: center;
@@ -40,10 +38,7 @@ body {
   position: relative;
 }
 
-.large-heart-svg {
-  width: 100%;
-  height: 100%;
-}
+.large-heart-svg { width: 100%; height: 100%; }
 
 #storybook {
   position: absolute;
@@ -58,9 +53,7 @@ body {
   z-index: 5;
 }
 
-#storybook.show {
-  display: flex;
-}
+#storybook.show { display: flex; }
 
 #album {
   width: 300px;
@@ -87,6 +80,134 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* ------------------------------
+   Anniversary 2025 pages
+   ------------------------------ */
+
+#album .page.cover {
+  background: radial-gradient(circle at top, #ffe0f0, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#album .page.cover h5 {
+  font-size: 1.1em;
+  color: #ff4d6d;
+}
+
+.cover-sub {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ff6b8a;
+}
+
+.cover-date {
+  margin-top: 12px;
+  font-size: 0.55em;
+  opacity: 0.85;
+}
+
+.cover-hint {
+  margin-top: 14px;
+  font-size: 0.5em;
+  opacity: 0.65;
+}
+
+#album .page.intro {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-title { font-size: 0.9em; }
+
+.intro-sub {
+  margin-top: 12px;
+  font-size: 0.55em;
+  line-height: 1.35em;
+  color: #cc2550;
+}
+
+#album .page.month-page {
+  font-size: 0.65em;
+  color: #ff3366;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 18px;
+}
+
+.month-title {
+  width: 100%;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.month-photo {
+  width: 100%;
+  height: 190px;
+  border-radius: 12px;
+  border: 1px dashed #ff8fb1;
+  background: linear-gradient(135deg, #fff5f5, #ffeaea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-placeholder {
+  font-size: 0.55em;
+  padding: 12px;
+  color: #ff6b8a;
+  text-align: center;
+}
+
+#album .page.month-page .month-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 0;
+  max-height: none;
+}
+
+.month-text {
+  margin-top: 12px;
+  width: 100%;
+  font-size: 2em;
+  line-height: 1.35em;
+  color: #cc2550;
+  text-align: left;
+}
+
+#album .page.love-letter {
+  background: #fff0f0;
+  font-size: 0.6em !important;
+  padding: 28px;
+  line-height: 1.55em;
+  text-align: left;
+  position: relative;
+}
+
+.letter-title {
+  font-size: 1.0em;
+  margin-bottom: 14px;
+}
+
+.letter-body { font-size: 2em;}
+
+.page.gift .gift-sub {
+  margin-top: 10px;
+  font-size: 0.7em;
+  color: #cc2550;
+}
+
+/* Default img styling (month page overrides it with higher specificity) */
 .page img {
   max-width: 100%;
   max-height: 200px;
@@ -140,35 +261,8 @@ body {
 }
 
 @keyframes emojiFloat {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(110vh) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-@keyframes confettiFloat {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 0 600px;
-  }
-}
-
-.page.love-letter {
-  font-family: 'Dancing Script', cursive;
-  background: #fff0f0;
-  font-size: 0.5em !important;
-  padding: 40px;
-  line-height: 1.6em;
-  text-align: left;
-  position: relative;
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
 }
 
 .page.gift {
@@ -187,23 +281,13 @@ body {
 }
 
 @keyframes pulse {
-  0% {
-    box-shadow: 0 0 10px #ffb6c1;
-  }
-
-  100% {
-    box-shadow: 0 0 20px #ff4d6d;
-  }
+  0% { box-shadow: 0 0 10px #ffb6c1; }
+  100% { box-shadow: 0 0 20px #ff4d6d; }
 }
 
 @keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(-10px);
-  }
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
 }
 
 .heart-rain {
@@ -221,7 +305,6 @@ body {
   position: absolute;
   width: 12px;
   aspect-ratio: 32 / 29.6;
-  /* maintain perfect heart shape */
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 29.6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FF3366' d='M23.6,0c-2.7,0-5.1,1.1-6.6,2.9C15.5,1.1,13.1,0,10.4,0C4.7,0,0,4.7,0,10.4c0,11.3,16,19.2,16,19.2s16-7.9,16-19.2C32,4.7,27.3,0,23.6,0z'/%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
@@ -229,17 +312,9 @@ body {
   animation: fallHeart linear infinite;
   pointer-events: none;
   background-position: center;
-
 }
 
 @keyframes fallHeart {
-  0% {
-    transform: translateY(-50px) rotate(0deg) scale(0.8);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(110vh) rotate(360deg) scale(1);
-    opacity: 0;
-  }
+  0% { transform: translateY(-50px) rotate(0deg) scale(0.8); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg) scale(1); opacity: 0; }
 }
