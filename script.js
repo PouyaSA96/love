@@ -130,7 +130,6 @@ function showStorybook() {
   const album = document.getElementById("album");
   album.innerHTML = "";
 
-  const today = fmtToday();
 
   const pages = [
     {
@@ -138,7 +137,7 @@ function showStorybook() {
       html: `
         <h5>Happy Anniversary ❤️</h5>
         <div class="cover-sub">A little scrapbook of our LOVE in 2025</div>
-        <div class="cover-date">${today}</div>
+        <div class="cover-date">18 December 2025</div>
         <div class="cover-hint">(Swipe / drag to flip)</div>
       `,
     },
