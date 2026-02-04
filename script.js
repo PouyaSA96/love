@@ -1,229 +1,274 @@
-let tapCount = 0;
-let largeHeartShown = false;
+/* ==========================================================
+   Minimal Valentine
+   - Background hearts always
+   - YES => remove page, show fireworks + hearts only + top banner text
+   - Tap/click after YES => firework burst at finger (NO SOUND)
+   ========================================================== */
 
-// Click + touch support (desktop + iPhone)
-document.body.addEventListener("click", (e) => {
-  handleInteraction(e.clientX, e.clientY);
-});
+const CONFIG = {
+  theirName: "Pishiiii",
+  heartsIdleSpawnMs: 120,
+  heartsPartySpawnMs: 45,
+  backgroundRocketChancePerFrame: 0.06,
+};
 
-document.body.addEventListener("touchstart", (e) => {
-  const touch = e.touches[0];
-  handleInteraction(touch.clientX, touch.clientY);
-});
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-function handleInteraction(x, y) {
-  createFloatingHeart(x, y);
-  tapCount++;
+const page = document.getElementById("page");
+const loveBanner = document.getElementById("loveBanner");
+const theirNameEl = document.getElementById("theirName");
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const msg = document.getElementById("msg");
 
-  // Start background music on first real user interaction (browser autoplay rules)
-  const bgMusic = document.getElementById("bgMusic");
-  if (bgMusic && bgMusic.paused) {
-    bgMusic.volume = 0;
-    bgMusic
-      .play()
-      .then(() => {
-        gsap.to(bgMusic, { volume: 0.5, duration: 3 });
-      })
-      .catch((e) => console.warn("Blocked:", e));
-  }
+const heartsCanvas = document.getElementById("heartsCanvas");
+const hctx = heartsCanvas.getContext("2d", { alpha: true });
 
-  // After enough taps, show the big heart to "enter" the book
-  if (tapCount >= 20 && !largeHeartShown) {
-    largeHeartShown = true;
-    showLargeHeart();
-  }
+const fireworksCanvas = document.getElementById("fireworksCanvas");
+const fctx = fireworksCanvas.getContext("2d", { alpha: true });
+
+const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
+const rand = (a, b) => a + Math.random() * (b - a);
+
+let celebrating = false;
+
+// Hearts
+let hearts = [];
+let lastHeartSpawn = 0;
+
+// Fireworks
+let rockets = [];
+let sparks = [];
+
+// ---------- Canvas resize ----------
+function resizeCanvas(c, ctx) {
+  const dpr = Math.max(1, window.devicePixelRatio || 1);
+  c.width = Math.floor(window.innerWidth * dpr);
+  c.height = Math.floor(window.innerHeight * dpr);
+  c.style.width = window.innerWidth + "px";
+  c.style.height = window.innerHeight + "px";
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 }
 
-function createFloatingHeart(x, y) {
-  const heart = document.createElement("div");
-  heart.classList.add("floating-heart");
-  heart.style.left = x + "px";
-  heart.style.top = y + "px";
-  document.body.appendChild(heart);
+function onResize() {
+  resizeCanvas(heartsCanvas, hctx);
+  resizeCanvas(fireworksCanvas, fctx);
+}
+window.addEventListener("resize", onResize);
 
-  const dx = (Math.random() - 0.5) * 200;
-  const dy = -Math.random() * 200 - 50;
-  const rotation = Math.random() * 360;
-
-  gsap.set(heart, { opacity: 1, scale: 1 });
-  gsap.to(heart, {
-    duration: 3,
-    x: `+=${dx}`,
-    y: `+=${dy}`,
-    rotation: rotation,
-    opacity: 0,
-    ease: "power1.out",
-    onComplete: () => heart.remove(),
+// ---------- Hearts ----------
+function spawnHeart() {
+  const size = rand(6, 16);
+  hearts.push({
+    x: rand(0, window.innerWidth),
+    y: window.innerHeight + 25,
+    vx: rand(-0.7, 0.7),
+    vy: rand(0.7, 2.0),
+    size,
+    rot: rand(0, Math.PI * 2),
+    vr: rand(-0.03, 0.03),
+    alpha: rand(0.32, 0.78),
+    hue: rand(330, 360),
   });
 }
 
-function showLargeHeart() {
-  document.getElementById("instruction").classList.add("hidden");
-  const bigHeart = document.getElementById("bigHeart");
-  bigHeart.classList.remove("hidden");
+function drawHeart(x, y, size, rot, alpha, hue) {
+  hctx.save();
+  hctx.translate(x, y);
+  hctx.rotate(rot);
+  hctx.globalAlpha = alpha;
 
-  gsap.fromTo(bigHeart, { scale: 0 }, { duration: 1, scale: 1, ease: "back.out(1.7)" });
-  gsap.to(bigHeart, { duration: 0.8, scale: 1.1, yoyo: true, repeat: -1, ease: "power1.inOut" });
+  hctx.beginPath();
+  const s = size;
+  hctx.moveTo(0, s * 0.35);
+  hctx.bezierCurveTo(0, -s * 0.15, -s * 0.55, -s * 0.1, -s * 0.55, s * 0.25);
+  hctx.bezierCurveTo(-s * 0.55, s * 0.65, -s * 0.1, s * 0.85, 0, s);
+  hctx.bezierCurveTo(s * 0.1, s * 0.85, s * 0.55, s * 0.65, s * 0.55, s * 0.25);
+  hctx.bezierCurveTo(s * 0.55, -s * 0.1, 0, -s * 0.15, 0, s * 0.35);
+  hctx.closePath();
 
-  bigHeart.addEventListener("click", () => {
-    bigHeart.classList.add("hidden");
+  hctx.fillStyle = `hsla(${hue}, 90%, 60%, 1)`;
+  hctx.shadowBlur = celebrating ? 16 : 12;
+  hctx.shadowColor = `hsla(${hue}, 90%, 60%, .55)`;
+  hctx.fill();
 
-    // Stop the extra confetti emoji layer when entering the book (cleaner pages)
-    try {
-      clearInterval(emojiInterval);
-    } catch (_) {}
-    document.querySelector(".tear-overlay")?.remove();
-
-    showStorybook();
-  });
+  hctx.restore();
 }
 
-// ------------------------------
-// 2025 Month-by-month scrapbook
-// ------------------------------
+function tickHearts(ts) {
+  hctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-const MONTHS_2025 = [
-  { month: "January", img: "images/jan.jpg", text: "❤️ Remember our January adventure in Cairns? You were so cute. ❤️" },
-  { month: "February", img: "images/feb.jpg", text: "❤️ Remember how we spent Valentine’s Day on Cockatoo Island? You were so cute. ❤️" },
-  { month: "March", img: "images/march.jpg", text: "❤️ Remember March with your family? You were so cute in the park. ❤️" },
-  { month: "April", img: "images/april.jpg", text: "❤️ Remember April with my family? You were so cute at the Easter Show. ❤️" },
-  { month: "May", img: "images/may.jpg", text: "❤️ Remember May when you travelled? You were so cute at the airport. ❤️" },
-  { month: "June", img: "images/june.jpg", text: "❤️ Remember June when we were apart? It was a sad time, but you were still so cute. ❤️" },
-  { month: "July", img: "images/july.jpg", text: "❤️ Remember our birthdays together? You were so cute under the stars. ❤️" },
-  { month: "August", img: "images/aug.jpg", text: "❤️ Remember August together? You were so cute at the restaurant. ❤️" },
-  { month: "September", img: "images/sep.jpg", text: "❤️ Remember September together? You were so cute in the park near the bridge. ❤️" },
-  { month: "October", img: "images/oct.jpg", text: "❤️ Remember our October trip to Orange? You were so cute—my cutest little flower. ❤️" },
-  { month: "November", img: "images/nov.jpg", text: "❤️ Remember November together? You were so cute—the cutest in the whole world. ❤️" },
-  { month: "December", img: "images/dec.jpg", text: "❤️ Remember December together? You were the cutest angel. ❤️" },
-];
-
-
-function fmtToday() {
-  return new Date().toLocaleDateString("en-AU", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
-
-function renderMonthPage({ month, img, text }) {
-  return `
-    <div class="month-title">${month} 2025</div>
-    <div class="month-photo">
-      <div class="photo-placeholder">Drop image here:<br><strong>${img}</strong></div>
-      <img
-        src="${img}"
-        alt="${month} 2025"
-        onload="this.previousElementSibling.style.display='none';"
-        onerror="this.style.display='none'; this.previousElementSibling.innerHTML='Missing image:<br><strong>${img}</strong>';"
-      />
-    </div>
-    <div class="month-text">${text}</div>
-  `;
-}
-
-function showStorybook() {
-  document.getElementById("container").classList.add("hidden");
-  document.getElementById("storybook").classList.add("show");
-
-  const album = document.getElementById("album");
-  album.innerHTML = "";
-
-
-  const pages = [
-    {
-      className: "cover",
-      html: `
-        <h5>Happy Anniversary ❤️</h5>
-        <div class="cover-sub">A little scrapbook of our LOVE in 2025</div>
-        <div class="cover-date">18 December 2025</div>
-        <div class="cover-hint">(Swipe / drag to flip)</div>
-      `,
-    },
-    {
-      className: "intro",
-      html: `
-        <div class="intro-title">Twelve months. One us. One LOVE</div>
-      `,
-    },
-    ...MONTHS_2025.map((m) => ({ className: "month-page", html: renderMonthPage(m) })),
-    {
-      className: "love-letter",
-      html: `
-        <div class="letter-title">One more thing…</div>
-        <div class="letter-body">
-          Thank you for being my favorite person in every season.
-          <br><br>
-          Here’s to more months, more memories, and more “how are you still this cute?” moments.
-          <br><br>
-          Forever yours,<br><br>❤️ Pouya
-        </div>
-      `,
-    },
-    {
-      className: "gift",
-      html: `<h5>🎁 Next chapter: loading…</h5><div class="gift-sub">(I’m not done loving you.)</div>`,
-    },
-  ];
-
-  const pageElements = [];
-  for (const p of pages) {
-    const page = document.createElement("div");
-    page.className = `page${p.className ? " " + p.className : ""}`;
-    page.innerHTML = p.html;
-    pageElements.push(page);
+  if (!prefersReducedMotion) {
+    const spawnEvery = celebrating ? CONFIG.heartsPartySpawnMs : CONFIG.heartsIdleSpawnMs;
+    if (ts - lastHeartSpawn > spawnEvery) {
+      spawnHeart();
+      if (celebrating && Math.random() < 0.8) spawnHeart();
+      lastHeartSpawn = ts;
+    }
   }
 
-  requestAnimationFrame(() => {
-    const pageFlip = new St.PageFlip(album, {
-      width: 300,
-      height: 400,
-      size: "fixed",
-      maxShadowOpacity: 0.5,
-      showCover: false,
-      mobileScrollSupport: false,
-      usePortrait: true,
-      startPage: 0,
-      useMouseEvents: true,
+  hearts.forEach(h => {
+    h.y -= h.vy;
+    h.x += h.vx;
+    h.rot += h.vr;
+    drawHeart(h.x, h.y, h.size, h.rot, h.alpha, h.hue);
+  });
+
+  hearts = hearts.filter(h => h.y > -80 && h.x > -120 && h.x < window.innerWidth + 120);
+  requestAnimationFrame(tickHearts);
+}
+
+// ---------- Fireworks ----------
+function addRocket(x) {
+  rockets.push({
+    x,
+    y: window.innerHeight + 10,
+    vx: rand(-1.2, 1.2),
+    vy: rand(-10.0, -14.0),
+    life: 0,
+    ttl: rand(38, 64),
+    hue: rand(0, 360),
+  });
+}
+
+function explode(x, y, hue) {
+  const count = rand(55, 95);
+  for (let i = 0; i < count; i++) {
+    const angle = rand(0, Math.PI * 2);
+    const speed = rand(2.0, 7.0);
+    sparks.push({
+      x, y,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      g: 0.12,
+      life: 0,
+      ttl: rand(32, 78),
+      hue: (hue + rand(-22, 22) + 360) % 360,
+      size: rand(1.1, 2.6),
+      alpha: 1,
+      twinkle: Math.random() < 0.22,
     });
+  }
+  if (sparks.length > 2200) sparks.splice(0, sparks.length - 2200);
+}
 
-    pageFlip.loadFromHTML(pageElements);
-    launchConfetti();
+function tickFireworks() {
+  fctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-    // Mute Toggle (fixes the old scope bug)
-    const bgMusic = document.getElementById("bgMusic");
-    const muteButton = document.getElementById("muteToggle");
+  if (!celebrating || prefersReducedMotion) {
+    requestAnimationFrame(tickFireworks);
+    return;
+  }
 
-    if (muteButton && bgMusic) {
-      muteButton.classList.remove("hidden");
-      muteButton.textContent = bgMusic.muted ? "🔇" : "🔊";
+  fctx.fillStyle = "rgba(0,0,0,0.12)";
+  fctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
-      muteButton.addEventListener("click", () => {
-        bgMusic.muted = !bgMusic.muted;
-        muteButton.textContent = bgMusic.muted ? "🔇" : "🔊";
-      });
+  if (Math.random() < CONFIG.backgroundRocketChancePerFrame) {
+    addRocket(rand(80, window.innerWidth - 80));
+  }
+
+  rockets.forEach(r => {
+    r.life++;
+    r.x += r.vx;
+    r.y += r.vy;
+    r.vy += 0.20;
+
+    fctx.save();
+    fctx.globalAlpha = 0.9;
+    fctx.fillStyle = `hsla(${r.hue}, 95%, 70%, 1)`;
+    fctx.beginPath();
+    fctx.arc(r.x, r.y, 2.1, 0, Math.PI * 2);
+    fctx.fill();
+    fctx.restore();
+
+    if (r.life >= r.ttl || r.vy > -2) {
+      explode(r.x, r.y, r.hue);
+      r.dead = true;
     }
   });
-}
+  rockets = rockets.filter(r => !r.dead);
 
-function launchConfetti() {
-  const canvas = document.createElement("canvas");
-  canvas.id = "confetti-canvas";
-  document.body.appendChild(canvas);
+  sparks.forEach(p => {
+    p.life++;
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += p.g;
 
-  canvas.style.position = "fixed";
-  canvas.style.top = 0;
-  canvas.style.left = 0;
-  canvas.style.width = "100%";
-  canvas.style.height = "100%";
-  canvas.style.zIndex = 100;
-  canvas.style.pointerEvents = "none";
+    const t = p.life / p.ttl;
+    p.alpha = 1 - t;
+    const flicker = p.twinkle ? (0.6 + Math.random() * 0.4) : 1;
 
-  const myConfetti = confetti.create(canvas, { resize: true, useWorker: true });
-  myConfetti({
-    particleCount: 150,
-    spread: 120,
-    origin: { y: 0.6 },
+    fctx.save();
+    fctx.globalAlpha = p.alpha * flicker;
+    fctx.fillStyle = `hsla(${p.hue}, 95%, 70%, 1)`;
+    fctx.shadowBlur = 14;
+    fctx.shadowColor = `hsla(${p.hue}, 95%, 70%, 0.70)`;
+    fctx.beginPath();
+    fctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+    fctx.fill();
+    fctx.restore();
+
+    if (p.life >= p.ttl) p.dead = true;
   });
+  sparks = sparks.filter(p => !p.dead);
+
+  requestAnimationFrame(tickFireworks);
 }
+
+// ---------- Celebrate ----------
+function celebrate() {
+  celebrating = true;
+  document.body.classList.add("celebrating");
+  loveBanner.setAttribute("aria-hidden", "false");
+
+  // remove the entire page (no UI)
+  if (page) page.remove();
+
+  // start with a few rockets (no center explosion)
+  for (let i = 0; i < 4; i++) addRocket(rand(80, window.innerWidth - 80));
+}
+
+// ---------- Tap bursts ----------
+function tapBurst(x, y) {
+  if (!celebrating) return;
+  explode(x, y, rand(0, 360));
+}
+
+// ---------- “No” button optional dodge ----------
+function dodgeNo() {
+  const rect = document.querySelector(".card").getBoundingClientRect();
+  const btnRect = noBtn.getBoundingClientRect();
+  const maxX = rect.width - btnRect.width - 18;
+  const maxY = rect.height - btnRect.height - 18;
+
+  const x = clamp(rand(14, maxX), 14, maxX);
+  const y = clamp(rand(14, maxY), 14, maxY);
+
+  noBtn.style.position = "absolute";
+  noBtn.style.left = `${x}px`;
+  noBtn.style.top = `${y}px`;
+
+  msg.textContent = "That button is… not cooperating 😌";
+}
+
+// ---------- Init ----------
+function init() {
+  theirNameEl.textContent = CONFIG.theirName;
+  onResize();
+
+  requestAnimationFrame(tickHearts);
+  requestAnimationFrame(tickFireworks);
+
+  yesBtn.addEventListener("click", celebrate);
+
+  // optional: no button dodges (remove these if you want normal)
+  noBtn.addEventListener("mouseenter", dodgeNo);
+  noBtn.addEventListener("touchstart", (e) => { e.preventDefault(); dodgeNo(); }, { passive: false });
+
+  // taps/clicks after YES
+  window.addEventListener("pointerdown", (e) => {
+    tapBurst(e.clientX, e.clientY);
+  }, { passive: true });
+}
+
+init();
