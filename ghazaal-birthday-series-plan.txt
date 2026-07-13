@@ -1,0 +1,288 @@
+Project Name:
+Ghazaal: The Birthday Series
+
+This Year:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+Release Date: 19 July 2026
+
+Next Year:
+Season 2 · Episode 30
+The One Where Ghazaal Turns 30
+Release Date: 19 July 2027
+
+
+STEP 1 — LOCKED CORE CONCEPT
+
+This project is not a normal birthday website.
+
+It is the first episode of an ongoing birthday series for Ghazaal.
+
+This year is:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+
+Next year is:
+Season 2 · Episode 30
+The One Where Ghazaal Turns 30
+
+Episode 29 should feel like Ghazaal is starring in her own Friends birthday episode.
+
+Episode 30 should be teased as the bigger sequel.
+
+
+SERIES IDENTITY
+
+Series Title:
+Ghazaal: The Birthday Series
+
+Episode 29 Title:
+The One Where Ghazaal Turns 29
+
+Episode 30 Title:
+The One Where Ghazaal Turns 30
+
+Recurring Format:
+Ghazaal: The Birthday Series
+Season [Number] · Episode [Age]
+The One Where Ghazaal Turns [Age]
+
+
+CORE IDEA
+
+Create an interactive, cinematic, emotional, Friends-style birthday website where Ghazaal is the new main character in a small birthday episode.
+
+The site should feel like:
+- a new mini Friends episode
+- an interactive apartment
+- a birthday tribute
+- a romantic surprise
+- a sitcom-style experience
+- the first chapter in a bigger birthday universe
+
+Episode 29 is the warm first episode.
+
+Episode 30 is the bigger sequel.
+
+
+EPISODE 29 CREATIVE DIRECTION
+
+Mood:
+Warm, cute, sitcom-style, emotional, interactive, romantic, funny, personal, nostalgic, premium.
+
+Visual world:
+- Friends apartment
+- Monica and Rachel apartment feeling
+- purple door
+- yellow frame
+- couch
+- coffee table
+- warm apartment lighting
+- birthday cake
+- balloons
+- framed photos
+- kitchen/fridge details
+- Central Perk coffee shop energy
+- orange couch / cafe atmosphere
+- episode title cards
+- sitcom transitions
+- laugh-track moments
+- emotional end-of-episode moment
+
+Story:
+Ghazaal opens the site and slowly discovers she is the star of her own Friends birthday episode.
+
+Everything in the apartment is personalised for her:
+- the cake opens 29 reasons
+- the mug opens friend messages
+- the photo frame opens memories
+- the TV opens the birthday trailer
+- the couch opens Pouya’s message
+- the purple door teases Episode 30
+
+
+EPISODE 30 CREATIVE DIRECTION
+
+Mood:
+Bigger, more dramatic, more golden, more cinematic, funnier, louder, more emotional, more people, more videos, more surprises.
+
+Visual world:
+- Friends apartment, but bigger and more cinematic
+- golden 30 teaser
+- dramatic birthday sequel energy
+- more cast/friend/family involvement
+- more AI videos
+- bigger trailer
+- stronger emotional finale
+- turning-30 sitcom panic energy
+- “Why, God, why?” style birthday drama energy
+
+Story:
+Episode 30 should feel like the sequel that was clearly planned from Episode 29.
+
+Episode 29 should keep hinting:
+The big one is coming.
+
+
+MAIN WEBSITE SECTIONS FOR EPISODE 29
+
+1. Cold Open
+A dark opening screen with:
+Ghazaal: The Birthday Series
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+Start Episode
+
+2. Friends-Style Opening Credits
+An intro sequence where Ghazaal is introduced as the star of the episode.
+
+3. Interactive Apartment Homepage
+The main hub. A Friends-style apartment where objects open sections.
+
+4. The One With 29 Reasons
+29 flip cards with reasons Pouya loves Ghazaal.
+
+5. The One With All The Friends
+Messages, photos, voice notes, and videos from her friends/family.
+
+6. The One With The Memories
+Photo gallery, scrapbook, and “Previously on...” memory montage.
+
+7. The One With The Birthday Trailer
+AI-generated posters, videos, episode stills, apartment scenes, Central Perk scenes, and birthday visuals.
+
+8. How Well Do You Know Ghazaal?
+A fun quiz/game section.
+
+9. The One With The Voice Notes
+Answering-machine-style audio messages.
+
+10. The One With Ghazaal’s Character Mode
+Rachel / Monica / Phoebe / Joey / Chandler / Ross-style personality mode cards.
+
+11. The One With Her Favourite Things
+Favourite foods, drinks, songs, habits, colours, comfort things, and inside jokes.
+
+12. The One With The Birthday Wish
+A quiet magical window/candle wish moment.
+
+13. The One From Pouya
+The main emotional birthday message.
+
+14. Post-Credit Scene
+Episode 30 teaser:
+Season 2 · Episode 30
+The One Where Ghazaal Turns 30
+Coming July 19, 2027
+
+
+AUDIO / MUSIC DIRECTION
+
+Music and sound are part of the experience.
+
+Include:
+- Friends theme music or Friends-style intro music
+- 90s sitcom transition sounds
+- laugh track
+- audience applause
+- audience “aww”
+- apartment ambience
+- Central Perk / cafe ambience
+- card flip sounds
+- camera shutter sounds
+- TV static
+- remote click
+- phone ring
+- answering machine beep
+- fridge/kitchen sound
+- birthday chime
+- confetti pop
+- romantic piano for Pouya’s message
+- cinematic golden teaser sound for Episode 30
+
+Audio must be controllable:
+- Music On/Off
+- Sound Effects On/Off
+- no loud autoplay before user interaction
+
+
+IMPORTANT EXPERIENCE RULE
+
+The site should not feel like a normal scroll page.
+
+It should feel like a real mini episode.
+
+Preferred structure:
+Cold Open
+↓
+Opening Credits
+↓
+Interactive Friends Apartment
+↓
+Episode Sections
+↓
+Pouya’s Final Message
+↓
+Post-Credit Episode 30 Teaser
+
+
+CONTENT NEEDED
+
+For Episode 29:
+- 10–20 good solo photos of Ghazaal
+- 5–10 photos of Pouya and Ghazaal
+- 5–15 photos with friends/family
+- 10–20 memory photos
+- 29 personalised reasons Pouya loves Ghazaal
+- 5–10 friend messages
+- optional voice notes
+- optional video messages
+- inside jokes
+- favourite foods
+- favourite songs
+- favourite colours
+- favourite Friends moments/characters
+- AI-generated Friends-style visuals/videos of Ghazaal in the episode world
+
+
+TECHNICAL FOUNDATION
+
+Recommended stack:
+- Next.js or React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- JSON-driven content
+- mobile-first responsive design
+- Vercel deployment
+
+Recommended routes:
+- /birthday/29
+- /birthday/30
+
+or:
+- /season-1/episode-29
+- /season-2/episode-30
+
+Important:
+Build it modularly so Episode 30 can be added next year without rebuilding everything.
+
+
+FINAL NORTH STAR
+
+This is Episode 29 of Ghazaal’s birthday series.
+
+It should make Ghazaal feel like:
+- the star of her own Friends episode
+- loved by Pouya
+- loved by her friends
+- celebrated properly
+- surprised by the amount of effort
+- excited that Episode 30 is coming
+
+Episode 29 should be beautiful, funny, romantic, and complete.
+
+But it should also clearly say:
+This was only the beginning.
+
+The big one comes next year.

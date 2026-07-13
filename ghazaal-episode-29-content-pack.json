@@ -1,0 +1,383 @@
+{
+  "seriesTitle": "Ghazaal: The Birthday Series",
+  "season": 1,
+  "episode": 29,
+  "title": "The One Where Ghazaal Turns 29",
+  "releaseDate": "2026-07-19",
+  "reasons": [
+    {
+      "number": 1,
+      "title": "Your smile",
+      "text": "I love your smile, because it somehow makes everything around it feel lighter."
+    },
+    {
+      "number": 2,
+      "title": "Your laugh",
+      "text": "I love your laugh, because once it starts, the whole moment becomes better."
+    },
+    {
+      "number": 3,
+      "title": "Your warmth",
+      "text": "I love how warm you are with people, even when you do not realise how much comfort you give them."
+    },
+    {
+      "number": 4,
+      "title": "Ordinary days",
+      "text": "I love that you make ordinary days feel like they mattered."
+    },
+    {
+      "number": 5,
+      "title": "Your chaos",
+      "text": "I love your little chaotic moments, because they make you even more you."
+    },
+    {
+      "number": 6,
+      "title": "The way you care",
+      "text": "I love the way you care, deeply and naturally, without needing attention for it."
+    },
+    {
+      "number": 7,
+      "title": "How alive you make things feel",
+      "text": "I love how beautiful you are, but even more than that, I love how alive you make everything feel."
+    },
+    {
+      "number": 8,
+      "title": "Main-character energy",
+      "text": "I love that you have this main-character energy without even trying."
+    },
+    {
+      "number": 9,
+      "title": "Your reactions",
+      "text": "I love the way you react to things, because even your small expressions are somehow unforgettable."
+    },
+    {
+      "number": 10,
+      "title": "Simple plans",
+      "text": "I love that being with you can make even the simplest plans feel exciting."
+    },
+    {
+      "number": 11,
+      "title": "Your soft side",
+      "text": "I love how soft and sweet you can be, especially in the little moments."
+    },
+    {
+      "number": 12,
+      "title": "Your dramatic side",
+      "text": "I love that you can also be funny and dramatic in the best possible way."
+    },
+    {
+      "number": 13,
+      "title": "The room gets warmer",
+      "text": "I love how you make places feel warmer just by being there."
+    },
+    {
+      "number": 14,
+      "title": "Doing nothing together",
+      "text": "I love that time with you never feels wasted, even when we are doing absolutely nothing."
+    },
+    {
+      "number": 15,
+      "title": "Easy memories",
+      "text": "I love how easy it is to make memories with you."
+    },
+    {
+      "number": 16,
+      "title": "Small things become stories",
+      "text": "I love the way you turn small things into stories worth remembering."
+    },
+    {
+      "number": 17,
+      "title": "You make me try properly",
+      "text": "I love that you make me want to do things properly — not halfway, not lazily, but with real effort."
+    },
+    {
+      "number": 18,
+      "title": "Less overthinking, more feeling",
+      "text": "I love that you are one of the few people who can make me overthink less and feel more."
+    },
+    {
+      "number": 19,
+      "title": "Your heart",
+      "text": "I love how much heart you have."
+    },
+    {
+      "number": 20,
+      "title": "How you love your people",
+      "text": "I love the way you love your people, because it says everything about who you are."
+    },
+    {
+      "number": 21,
+      "title": "Softer and brighter",
+      "text": "I love that life feels softer when you are close and brighter when you are happy."
+    },
+    {
+      "number": 22,
+      "title": "You make me create",
+      "text": "I love that even this whole episode exists because loving you makes me want to create things."
+    },
+    {
+      "number": 23,
+      "title": "Naturally beautiful",
+      "text": "I love how naturally beautiful you are, in the kind of way that goes way beyond looks."
+    },
+    {
+      "number": 24,
+      "title": "Unforgettable",
+      "text": "I love that even when you are not trying, you still end up being unforgettable."
+    },
+    {
+      "number": 25,
+      "title": "All at once",
+      "text": "I love how being with you can feel fun, calm, romantic, and chaotic all at once."
+    },
+    {
+      "number": 26,
+      "title": "So many happy memories",
+      "text": "I love that when I think about happy memories, somehow you are in so many of them."
+    },
+    {
+      "number": 27,
+      "title": "Lucky",
+      "text": "I love that you make me feel lucky in a way that is hard to explain but impossible to ignore."
+    },
+    {
+      "number": 28,
+      "title": "Easy, natural, right",
+      "text": "I love that loving you feels easy, natural, and right."
+    },
+    {
+      "number": 29,
+      "title": "You",
+      "text": "More than anything, I love that you are you — and that gets to be my favourite part of the story."
+    }
+  ],
+  "favouriteThings": {
+    "sectionTitle": "The One With Her Favourite Things",
+    "sectionSubtitle": "A few tiny details from the official Ghazaal happiness board.",
+    "displayStyle": "fridge-magnets-and-central-perk-menu-board",
+    "items": [
+      {
+        "id": "food-that-fixes-everything",
+        "label": "Food that fixes everything",
+        "value": "Borani made by Pouya",
+        "note": "Emergency happiness protocol."
+      },
+      {
+        "id": "dessert-emergency-protocol",
+        "label": "Dessert emergency protocol",
+        "value": "Narenjack",
+        "note": "For when the episode needs a sweeter ending."
+      },
+      {
+        "id": "drink-of-choice",
+        "label": "Drink of choice",
+        "value": "Hot chocolate with whipped cream and a little extra chocolate drizzle",
+        "note": "Central Perk would absolutely have this ready for her."
+      },
+      {
+        "id": "comfort-show",
+        "label": "Comfort show",
+        "value": "Friends",
+        "note": "Obviously. The writers knew what they were doing."
+      },
+      {
+        "id": "favourite-friends-character",
+        "label": "Favourite Friends character",
+        "value": "Joey",
+        "note": "Important scientific data for the episode."
+      },
+      {
+        "id": "colour-palette",
+        "label": "Colour palette",
+        "value": "Blue, pink, and silver gold",
+        "note": "The official colour of Ghazaal-coded happiness."
+      },
+      {
+        "id": "instant-happiness-trigger",
+        "label": "Instant happiness trigger",
+        "value": "A thoughtful surprise",
+        "note": "Especially when it is made just for her."
+      },
+      {
+        "id": "cute-habit",
+        "label": "Cute habit",
+        "value": "Everything about her is cute",
+        "note": "Small detail. Huge effect."
+      },
+      {
+        "id": "funny-habit",
+        "label": "Funny habit",
+        "value": "Watching Friends and laughing at the same jokes every time",
+        "note": "The kind of thing that deserves its own laugh track."
+      },
+      {
+        "id": "most-ghazaal-coded-behaviour",
+        "label": "Most Ghazaal-coded behaviour",
+        "value": "Making normal moments feel special",
+        "note": "Not even on purpose. Just talent."
+      },
+      {
+        "id": "best-kind-of-day",
+        "label": "Best kind of day",
+        "value": "A warm, easy day with good food, good company, and no stress",
+        "note": "Low drama, high happiness."
+      },
+      {
+        "id": "favourite-kind-of-surprise",
+        "label": "Favourite kind of surprise",
+        "value": "Something thoughtful, romantic, and a little dramatic",
+        "note": "Exactly the correct amount of extra."
+      },
+      {
+        "id": "song-that-feels-like-her",
+        "label": "Song that feels like her",
+        "value": "Until I Found You",
+        "note": "The unofficial soundtrack of her scene."
+      },
+      {
+        "id": "thing-that-makes-her-laugh",
+        "label": "Thing that always makes her laugh",
+        "value": "Me being silly",
+        "note": "If it works every time, it belongs in the episode."
+      },
+      {
+        "id": "pouyas-favourite-ghazaal-detail",
+        "label": "Pouya's favourite Ghazaal detail",
+        "value": "The way she can make everything feel warmer",
+        "note": "Small detail. Whole episode changed."
+      }
+    ]
+  },
+  "quiz": {
+    "sectionTitle": "How Well Do You Know Ghazaal?",
+    "sectionSubtitle": "A completely serious quiz. Obviously.",
+    "questions": [
+      {
+        "id": "central-perk-order",
+        "question": "What would Ghazaal most likely order at Central Perk?",
+        "options": [
+          "Black coffee, no nonsense",
+          "Something cute and a little extra",
+          "Whatever comes with dessert",
+          "Tea, but only if the vibe is right"
+        ],
+        "correctAnswer": "Something cute and a little extra",
+        "feedback": "Correct. Cute, specific, and slightly extra is the correct episode energy."
+      },
+      {
+        "id": "friends-character-energy",
+        "question": "Which Friends character energy is Ghazaal giving today?",
+        "options": [
+          "Rachel",
+          "Monica",
+          "Phoebe",
+          "A dangerous mix of all three"
+        ],
+        "correctAnswer": "A dangerous mix of all three",
+        "feedback": "Correct. Stylish, caring, chaotic sparkle. The writers had range."
+      },
+      {
+        "id": "most-ghazaal-coded",
+        "question": "What is most Ghazaal-coded?",
+        "options": [
+          "Making normal moments feel special",
+          "Accidentally becoming the centre of attention",
+          "Being cute and a little chaotic",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "feedback": "Correct. This was clearly a trick question."
+      },
+      {
+        "id": "birthday-surprise",
+        "question": "What kind of birthday surprise suits Ghazaal best?",
+        "options": [
+          "Something simple and sweet",
+          "Something thoughtful and romantic",
+          "Something dramatic and unforgettable",
+          "All of them, if done properly"
+        ],
+        "correctAnswer": "All of them, if done properly",
+        "feedback": "Correct. The execution matters. No pressure, Pouya."
+      },
+      {
+        "id": "unforgettable",
+        "question": "What is one thing that makes Ghazaal unforgettable?",
+        "options": [
+          "Her smile",
+          "Her energy",
+          "Her heart",
+          "The fact that somehow all of it works together"
+        ],
+        "correctAnswer": "The fact that somehow all of it works together",
+        "feedback": "Correct. Some people are just unfairly well-written characters."
+      },
+      {
+        "id": "sitcom-crisis",
+        "question": "What is Ghazaal most likely to do in a sitcom-style mini crisis?",
+        "options": [
+          "Laugh",
+          "Be dramatic for a second",
+          "Make the situation cuter somehow",
+          "All of the above"
+        ],
+        "correctAnswer": "All of the above",
+        "feedback": "Correct. A complete emotional range in one scene."
+      },
+      {
+        "id": "why-website-exists",
+        "question": "What makes Pouya make an entire birthday episode website?",
+        "options": [
+          "Healthy emotional balance",
+          "Clearly normal behaviour",
+          "Being very in love",
+          "Mild overengineering"
+        ],
+        "correctAnswer": "Being very in love",
+        "feedback": "Correct. Also mild overengineering, but we are calling it romance."
+      },
+      {
+        "id": "episode-ending",
+        "question": "What is the correct ending to Episode 29?",
+        "options": [
+          "Cake",
+          "A kiss",
+          "A sequel teaser",
+          "Obviously all three"
+        ],
+        "correctAnswer": "Obviously all three",
+        "feedback": "Correct. The big one is coming next year."
+      }
+    ],
+    "results": [
+      {
+        "minScore": 7,
+        "title": "You clearly know the birthday queen.",
+        "description": "Top-tier performance. You are officially part of the episode."
+      },
+      {
+        "minScore": 5,
+        "title": "You passed. Barely. Cake is still required.",
+        "description": "Respectable effort, but birthday dessert remains mandatory."
+      },
+      {
+        "minScore": 3,
+        "title": "You need one more season of training.",
+        "description": "Not terrible. Not iconic yet. Come back for Episode 30."
+      },
+      {
+        "minScore": 0,
+        "title": "The writers are concerned.",
+        "description": "This result has been sent to Central Perk for review."
+      }
+    ]
+  },
+  "pouyaFinalMessage": "Ghazaal,\n\nThis is The One Where You Turn 29.\n\nA normal birthday message felt too small, so I made you an episode. Very normal behaviour from me, obviously.\n\nBut honestly, I wanted to make something that feels even a little bit like you: warm, funny, beautiful, emotional, a little dramatic in the best way, and impossible not to love.\n\nYou make ordinary days feel special. You make small moments feel like memories. You make rooms warmer just by being in them. And somehow, without even trying, you have become my favourite part of the story.\n\nI love your laugh, your heart, your softness, your chaos, your kindness, and all the little things you probably do not even notice about yourself.\n\nHappy 29th birthday, my love.\n\nI hope this year gives you even a little bit of the happiness you give to the people around you.\n\nAnd just so you know...\n\nThis is not the finale.\n\nThis is only Episode 1.\n\nThe big one is coming next year.",
+  "audioNotes": {
+    "introTheme": "/public/assets/episode-29/audio/music/friends-theme.mp3",
+    "apartmentLoop": "/public/assets/episode-29/audio/music/apartment-loop.mp3",
+    "romanticPiano": "/public/assets/episode-29/audio/music/romantic-piano.mp3",
+    "episode30Teaser": "/public/assets/episode-29/audio/music/episode-30-teaser.mp3",
+    "voiceNotes": []
+  }
+}

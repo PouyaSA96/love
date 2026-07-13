@@ -3,46 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#ff2f6d" />
-  <title>Be My Valentine 💘</title>
+  <meta name="theme-color" content="#5b2a86" />
+  <title>Ghazaal: The Birthday Series — S1E29</title>
+  <meta name="description" content="Ghazaal: The Birthday Series — Season 1, Episode 29: The One Where Ghazaal Turns 29." />
+  <link rel="icon" type="image/jpeg" href="/public/assets/episode-29/favicon.jpg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <!-- Background hearts -->
-  <canvas id="heartsCanvas" aria-hidden="true"></canvas>
 
-  <!-- Fireworks layer -->
-  <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+  <div id="app" aria-live="polite"></div>
 
-  <!-- Top message shown only after YES -->
-  <div id="loveBanner" class="loveBanner" aria-hidden="true">
-    You are the most beautiful valentine. I love you 💖
+  <!-- Persistent top HUD: episode label + controls (shown once episode has started) -->
+  <div id="hud" class="hud hidden">
+    <div class="hud-left">
+      <span class="hud-series">Ghazaal: The Birthday Series</span>
+      <span class="hud-episode">S1 · E29</span>
+    </div>
+    <div class="hud-right">
+      <button id="btnMusicToggle" class="hud-btn" type="button" title="Music on/off" aria-label="Toggle music">🎵</button>
+      <button id="btnSfxToggle" class="hud-btn" type="button" title="Sound effects on/off" aria-label="Toggle sound effects">🔔</button>
+      <button id="btnApartment" class="hud-btn" type="button" title="Back to Apartment" aria-label="Back to Apartment">🚪</button>
+      <button id="btnMenu" class="hud-btn" type="button" title="Episode Menu" aria-label="Episode Menu">☰</button>
+    </div>
   </div>
 
-  <!-- Minimal page (removed after YES) -->
-  <main id="page">
-    <section class="section hero">
-      <div class="card glass">
-        <div class="tag">💗 Valentine Mode</div>
-        <h1 class="title" id="theirName">My Favorite Human</h1>
-        <p class="subtitle">Scroll down… I have one important question.</p>
-        <div class="hint">↓ scroll ↓</div>
+  <!-- Audio consent modal -->
+  <div id="audioConsent" class="modal-overlay hidden">
+    <div class="modal-card">
+      <p class="modal-eyebrow">Before we start...</p>
+      <h2 class="modal-title">Turn on episode sound?</h2>
+      <p class="modal-copy">Music and sound effects make this a lot more fun. Totally optional.</p>
+      <div class="modal-actions">
+        <button id="btnSoundYes" class="btn btn-primary" type="button">Yes, start the vibe</button>
+        <button id="btnSoundNo" class="btn btn-ghost" type="button">No, silent mode</button>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section class="section finale">
-      <div class="card glass">
-        <h2 class="q">Will you be my Valentine? 😳💘</h2>
-        <p class="sub">Click carefully. This has… consequences.</p>
-        <div class="row">
-          <button class="btn primary" id="yesBtn" type="button">YES 💖</button>
-          <button class="btn ghost" id="noBtn" type="button">No 🙃</button>
-        </div>
-        <div class="small" id="msg" aria-live="polite"></div>
+  <!-- Episode menu drawer -->
+  <div id="episodeMenu" class="menu-overlay hidden">
+    <div class="menu-card">
+      <div class="menu-header">
+        <h2>Episode Guide</h2>
+        <button id="btnCloseMenu" class="hud-btn" type="button" aria-label="Close menu">✕</button>
       </div>
-    </section>
-  </main>
+      <div id="menuList" class="menu-list"></div>
+    </div>
+  </div>
+
+  <audio id="audioMusic" loop preload="none"></audio>
+  <audio id="audioSfx" preload="none"></audio>
 
   <script src="script.js"></script>
 </body>

@@ -1,0 +1,549 @@
+Ghazaal: The Birthday Series
+Step 4 — Claude Build Prompt / First Implementation
+
+Copy and paste this prompt into Claude inside VS Code.
+
+------------------------------------------------------------
+
+You are helping me build a personal interactive birthday website for my girlfriend Ghazaal.
+
+This is not a normal birthday page. It is an interactive Friends-style mini episode.
+
+The project is called:
+
+Ghazaal: The Birthday Series
+
+This year:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+Release date: 19 July 2026
+
+Next year teaser:
+Season 2 · Episode 30
+The One Where Ghazaal Turns 30
+Coming July 19, 2027
+
+The deployed domain is:
+pouya-loves-ghazaal.com
+
+Important:
+This repo already has deployment/CNAME setup. Do not remove or break the CNAME file. Do not delete existing repo/deployment config unless absolutely needed and explained.
+
+
+SOURCE OF TRUTH FILES
+
+Before coding, read these files carefully:
+
+1. ghazaal-birthday-series-plan.txt
+2. ghazaal-step-2-directors-cut.txt
+3. ghazaal-step-3-content-collection.txt
+4. ghazaal-step-3-couple-only-content-plan.txt
+5. ghazaal-episode-29-content-pack.json
+
+Use these as the source of truth.
+
+Use ghazaal-episode-29-content-pack.json as the main content file for:
+- 29 reasons
+- favourite things
+- quiz
+- Pouya final message
+- audio paths
+
+
+ASSET FOLDERS
+
+Photos are already organised here:
+
+/public/assets/episode-29/photos/ghazaal-solo
+/public/assets/episode-29/photos/pouya-ghazaal
+/public/assets/episode-29/photos/memories
+
+Audio SFX are here:
+
+/public/assets/episode-29/audio/sfx/sfx-card-flip.mp3
+/public/assets/episode-29/audio/sfx/sfx-camera-shutter.mp3
+/public/assets/episode-29/audio/sfx/sfx-tv-static.mp3
+/public/assets/episode-29/audio/sfx/sfx-remote-click.mp3
+/public/assets/episode-29/audio/sfx/sfx-door-creak.mp3
+/public/assets/episode-29/audio/sfx/sfx-laugh.mp3
+/public/assets/episode-29/audio/sfx/sfx-applause.mp3
+/public/assets/episode-29/audio/sfx/sfx-aww.mp3
+/public/assets/episode-29/audio/sfx/sfx-confetti.mp3
+
+Music files are here:
+
+/public/assets/episode-29/audio/music/friends-theme.mp3
+/public/assets/episode-29/audio/music/apartment-loop.mp3
+/public/assets/episode-29/audio/music/romantic-piano.mp3
+/public/assets/episode-29/audio/music/episode-30-teaser.mp3
+
+Voice notes are intentionally empty/skipped for Episode 29.
+
+
+IMPORTANT PUBLIC PATH NOTE
+
+The JSON may contain paths like:
+
+/public/assets/episode-29/audio/music/friends-theme.mp3
+
+But in most frontend frameworks, assets inside /public are referenced in the browser as:
+
+/assets/episode-29/audio/music/friends-theme.mp3
+
+Please create a small helper function to normalise asset paths, for example:
+
+function publicUrl(path) {
+  return path.replace(/^\/public/, "");
+}
+
+Use this helper for all images/audio/video paths so the site works whether the JSON path starts with /public or not.
+
+
+MAIN EXPERIENCE
+
+Build a polished first working version of the site with this flow:
+
+Cold Open
+↓
+Friends-style Opening Credits
+↓
+Interactive Apartment Hub
+↓
+The One With 29 Reasons
+↓
+The One With The Memories
+↓
+The One With The Birthday Trailer
+↓
+How Well Do You Know Ghazaal?
+↓
+The One With Her Favourite Things
+↓
+The One With The Birthday Wish
+↓
+The One From Pouya
+↓
+Post-Credit Scene: Episode 30 Teaser
+
+Since friends/voice notes are being saved for next year:
+- Do not build a full friend messages section for Episode 29.
+- Do not build a full voice notes section for Episode 29.
+- Optionally include a small locked/teaser card:
+  “The One With All The Friends — Coming in Season 2.”
+
+
+DESIGN DIRECTION
+
+Make it feel like Ghazaal is starring in a Friends birthday episode.
+
+Strong visual inspiration:
+- Monica/Rachel apartment
+- purple door
+- yellow peephole frame
+- warm sitcom lighting
+- couch
+- coffee table
+- birthday cake
+- TV
+- photo frames
+- kitchen/fridge
+- Central Perk-style coffee energy
+- title cards
+- laugh-track moments
+- post-credit teaser
+
+Episode 29 mood:
+Warm, cute, romantic, funny, emotional, interactive, nostalgic, premium.
+
+Episode 30 teaser mood:
+Golden, cinematic, dramatic, bigger, sequel energy.
+
+Do not make it look like a generic template. It should feel custom, premium, and personal.
+
+
+TECHNICAL REQUIREMENTS
+
+First inspect the repo and identify the existing framework/setup.
+
+Then implement using the existing stack if possible.
+
+If the repo is simple/static:
+- You may build with HTML/CSS/JS.
+If the repo is React/Vite/Next:
+- Use the existing framework.
+- Prefer React components.
+- If Tailwind/Framer Motion already exist, use them.
+- If they do not exist, do not add heavy dependencies unless necessary.
+
+Important:
+- Mobile-first responsive design.
+- Desktop should also look excellent.
+- Do not break deployment.
+- Keep CNAME intact.
+- Keep content data-driven.
+- Use ghazaal-episode-29-content-pack.json.
+- Use placeholders where needed, but make the whole flow functional.
+- Avoid massive refactors unless needed.
+- Keep code readable and maintainable.
+
+
+AUDIO REQUIREMENTS
+
+Audio should be a major feature but must be controlled.
+
+On first Start Episode click, show/ask:
+
+Turn on episode sound?
+[Yes, start the vibe]
+[No, silent mode]
+
+Controls:
+- Music On/Off
+- Sound Effects On/Off
+
+Use:
+- friends-theme.mp3 for opening credits / intro.
+- Do not require a separate intro-theme.mp3. Use friends-theme.mp3 and start/stop/cut it in code for the intro.
+- apartment-loop.mp3 for Apartment Hub.
+- romantic-piano.mp3 for Pouya message.
+- episode-30-teaser.mp3 for Episode 30 teaser.
+- SFX files for clicks/transitions/cards/photos/TV/door/laugh/applause/aww/confetti.
+
+Do not autoplay loud music before user interaction.
+Make audio optional.
+If audio fails, site should still work.
+
+
+PHOTO REQUIREMENTS
+
+Use the existing folders.
+
+The repo has:
+- 38 Ghazaal solo photos
+- 13 Pouya + Ghazaal photos
+- 13 memory photos
+
+Create a photo manifest/registry in code if needed.
+
+Recommended approach:
+- If the framework cannot dynamically read public folder contents at runtime, create arrays manually from the detected filenames.
+- Use the solo photos in hero/title/gallery sections.
+- Use Pouya + Ghazaal photos in memory and Pouya message sections.
+- Use childhood photos only in the memory section if present.
+- Do not use childhood photos for AI/reference styling.
+
+For now, no AI-generated media may exist yet. Create placeholders for:
+- Episode 29 poster
+- Birthday trailer
+- Friends apartment still
+- Central Perk still
+- Episode 30 teaser poster
+
+If AI media files are later added, the UI should support showing them.
+
+
+SECTION REQUIREMENTS
+
+1. Cold Open
+
+Must show:
+Ghazaal: The Birthday Series
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+Starring Ghazaal
+Created with too much love by Pouya
+
+Button:
+Start Episode
+
+Secondary option:
+Enter Apartment
+
+Visual:
+Dark/purple cinematic opening.
+Warm title reveal.
+
+
+2. Opening Credits
+
+Use friends-theme.mp3.
+
+Show animated cards:
+Starring Ghazaal
+Also Starring Pouya
+Episode 29
+The One Where Ghazaal Turns 29
+Created with too much love
+
+Include:
+Skip Intro button.
+
+Transition:
+Open/zoom into apartment.
+
+
+3. Interactive Apartment Hub
+
+This is the main screen.
+
+Make a stylised Friends apartment-inspired scene using CSS/HTML/images if no custom background exists.
+
+Include:
+- purple door
+- yellow frame
+- couch
+- birthday cake
+- TV
+- photo frame
+- coffee mug
+- fridge/kitchen
+- window
+- episode notebook
+- music controls
+
+Clickable objects:
+- Cake → 29 Reasons
+- Photo frame → Memories
+- TV → Birthday Trailer
+- Couch → Pouya Message
+- Fridge/Kitchen → Favourite Things
+- Coffee Table → Quiz
+- Window → Birthday Wish
+- Purple Door → Episode 30 Teaser
+- Notebook → Episode Guide
+
+The apartment should not feel like a boring menu. Make it visually playful with hover glows, labels, small animations, and SFX.
+
+
+4. The One With 29 Reasons
+
+Use reasons from ghazaal-episode-29-content-pack.json.
+
+Show 29 flip cards.
+
+Each card:
+Front:
+Reason #N
+Title
+
+Back:
+Full text
+
+Add:
+- progress count
+- card flip SFX
+- confetti after final card
+- small final note:
+  “Some people get a birthday card. You got a whole episode.”
+
+
+5. The One With The Memories
+
+Use photos from:
+/public/assets/episode-29/photos/memories
+and optionally some Pouya + Ghazaal photos.
+
+Show as:
+- scrapbook
+- Polaroid wall
+- carousel/grid
+- “Previously on Ghazaal: The Birthday Series…”
+
+Add captions using placeholders for now:
+- This one deserves its own episode.
+- Main character energy.
+- A classic Ghazaal moment.
+- Still one of my favourite memories.
+- No context. Still iconic.
+
+Use camera shutter SFX.
+
+
+6. The One With The Birthday Trailer
+
+For now create a beautiful placeholder section.
+
+Show:
+- Episode 29 poster placeholder
+- “Birthday trailer coming soon”
+- AI scene placeholders:
+  Apartment Scene
+  Central Perk Scene
+  Couch Scene
+  Surprise Party Scene
+  Episode 30 Teaser Still
+
+Use TV static/remote click SFX.
+
+Make it easy to replace placeholders with actual media files later.
+
+
+7. How Well Do You Know Ghazaal?
+
+Use quiz from ghazaal-episode-29-content-pack.json.
+
+Implement:
+- one question at a time
+- options
+- score
+- feedback after each answer
+- final result based on score
+
+Use:
+- laugh SFX
+- applause SFX
+- maybe soft click sounds
+
+
+8. The One With Her Favourite Things
+
+Use favouriteThings from ghazaal-episode-29-content-pack.json.
+
+Display as:
+- fridge magnets
+- sticky notes
+- Central Perk menu board
+
+Many values are placeholders like “Add her favourite comfort food”.
+That is okay for now.
+
+Make them easy to edit later.
+
+
+9. The One With The Birthday Wish
+
+Create a small magical section.
+
+Visual:
+Apartment window / candle / night sky.
+
+Text:
+Make a birthday wish.
+
+Then after click:
+I hope this year gives you even a little bit of the happiness you give everyone else.
+
+Use soft animation and optional sparkle/confetti SFX.
+
+
+10. The One From Pouya
+
+Use pouyaFinalMessage from ghazaal-episode-29-content-pack.json.
+
+Show it slowly and beautifully.
+
+Mood:
+Quiet, romantic, emotional.
+
+Use:
+romantic-piano.mp3
+
+No laugh track here.
+
+Button:
+Finish Episode
+
+
+11. Episode 30 Teaser / Post-Credit Scene
+
+Use episode-30-teaser.mp3.
+
+Visual:
+- golden cinematic styling
+- glowing 30
+- purple door
+- dramatic light
+- “coming next season” card
+
+Text:
+Season 1 complete.
+
+The One Where Ghazaal Turns 29 was only the beginning.
+
+Next Episode:
+The One Where Ghazaal Turns 30
+
+Coming July 19, 2027.
+
+Add:
+“The big one is coming.”
+“Some birthday episodes need a whole year to prepare.”
+Optional:
+“Why, God, why?” energy loading...
+
+Buttons:
+Replay Episode 29
+Back to Apartment
+
+
+STATE / NAVIGATION REQUIREMENTS
+
+Support:
+1. Watch Episode mode
+2. Explore Apartment mode
+
+Watch Episode:
+Guided next/continue buttons through the full sequence.
+
+Explore Apartment:
+Click objects freely.
+
+Always include:
+- Back to Apartment
+- Episode Menu
+- Music controls
+
+Optional:
+- progress indicator
+- section completion marks
+
+
+IMPLEMENTATION PRIORITY
+
+Build in this order:
+
+1. Confirm framework and project structure.
+2. Load content pack JSON.
+3. Implement asset path normalizer.
+4. Implement main app routing/view state.
+5. Build Cold Open.
+6. Build Intro Sequence.
+7. Build Apartment Hub.
+8. Build 29 Reasons.
+9. Build Memories.
+10. Build Quiz.
+11. Build Favourite Things.
+12. Build Pouya Message.
+13. Build Episode 30 Teaser.
+14. Add audio controller and SFX.
+15. Polish responsive design.
+16. Test deployment paths.
+
+
+QUALITY BAR
+
+The final first implementation should:
+- run locally
+- not break the repo
+- preserve CNAME
+- feel romantic and fun
+- work on mobile
+- use the content pack
+- show actual photos
+- play optional audio
+- have a strong Episode 30 teaser
+- be easy to edit later
+
+Do not stop after creating a skeleton. Build the first usable version.
+
+If something is missing, use tasteful placeholders and clearly mark them in code/content so I can replace later.
+
+
+FINAL CREATIVE RULE
+
+Every section should answer this:
+
+Would this make Ghazaal feel like the main character of her own Friends birthday episode?
+
+If yes, keep it.
+If no, improve it.

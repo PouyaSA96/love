@@ -1,0 +1,824 @@
+Ghazaal: The Birthday Series
+Step 3 — Content Collection Plan / Production Checklist
+
+Project:
+Ghazaal: The Birthday Series
+
+Episode:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+
+Release Date:
+19 July 2026
+
+Purpose of Step 3:
+Collect every piece of content needed before the website is built.
+
+The site should feel like a real Friends birthday episode starring Ghazaal. To make that work, the content must be personal, emotional, funny, visual, and organised.
+
+Do not start full implementation until the core content is collected or at least placeholder structure is ready.
+
+
+STEP 3 GOAL
+
+By the end of Step 3, Pouya should have:
+
+1. Photos of Ghazaal
+2. Photos of Pouya and Ghazaal
+3. Friend/family photos
+4. Memory photos
+5. 29 reasons Pouya loves Ghazaal
+6. Friend birthday messages
+7. Optional voice notes
+8. Optional short video messages
+9. AI image/video reference photos
+10. Quiz questions and answers
+11. Favourite things
+12. Audio/music/sound effects
+13. Final message draft from Pouya
+14. Folder structure in the repo
+15. JSON-ready content structure for Claude
+
+
+RECOMMENDED REPO FOLDER STRUCTURE
+
+Create this inside the website repo:
+
+/public
+  /assets
+    /episode-29
+      /photos
+        /ghazaal-solo
+        /pouya-ghazaal
+        /friends-family
+        /memories
+        /funny
+        /birthday
+      /ai
+        /reference
+        /generated-images
+        /generated-videos
+        /posters
+        /episode-stills
+      /audio
+        /music
+        /sfx
+        /voice-notes
+      /video
+        /friend-videos
+        /intro
+        /trailer
+      /icons
+      /backgrounds
+
+/src
+  /content
+    episode-29.json
+    episode-30-teaser.json
+
+/docs
+  ghazaal-birthday-series-plan.txt
+  ghazaal-step-2-directors-cut.txt
+  ghazaal-step-3-content-collection.txt
+
+
+FILE NAMING RULES
+
+Use clean file names. No spaces. No random WhatsApp names.
+
+Good examples:
+ghazaal-solo-01.jpg
+ghazaal-solo-02.jpg
+pouya-ghazaal-01.jpg
+memory-snowy-01.jpg
+friend-message-sara.mp3
+voice-note-maryam.mp3
+ai-poster-episode-29.png
+ai-central-perk-ghazaal-01.png
+sfx-card-flip.mp3
+
+Bad examples:
+IMG_4839.JPG
+WhatsApp Image 2026-07-01 at 3.23.44 PM.jpeg
+finalfinalREALone.jpg
+this_one_use_this_maybe_2.png
+
+
+CONTENT COLLECTION PRIORITY
+
+Priority 1 — Must have:
+- 10 good photos of Ghazaal
+- 5 photos of Pouya and Ghazaal
+- 10 memory photos
+- 29 reasons
+- Pouya final message
+- 5 friend messages
+- 1 intro/background music option
+- basic sound effects
+
+Priority 2 — Strongly recommended:
+- 10 friend/family photos
+- 3 to 5 voice notes
+- AI poster
+- AI intro/trailer
+- quiz questions
+- favourite things section
+
+Priority 3 — Extra magic:
+- friend video messages
+- multiple AI scene stills
+- character mode images
+- custom soundtrack moments
+- Episode 30 teaser poster/video
+- “answering machine” voice section
+- birthday wish section
+
+
+PHOTO COLLECTION
+
+1. Ghazaal Solo Photos
+
+Needed:
+10 to 20 photos.
+
+Purpose:
+Used for hero visuals, AI references, gallery, title cards, posters, and emotional moments.
+
+Best photo types:
+- smiling photos
+- clear face photos
+- nice outfit photos
+- natural candid photos
+- birthday-style photos
+- photos where she looks confident/happy
+- photos with good lighting
+
+Avoid:
+- blurry photos
+- harsh shadows
+- unflattering screenshots
+- group photos where her face is tiny
+- overly filtered photos that confuse AI
+
+Folder:
+/public/assets/episode-29/photos/ghazaal-solo
+
+Naming:
+ghazaal-solo-01.jpg
+ghazaal-solo-02.jpg
+
+
+2. Pouya + Ghazaal Photos
+
+Needed:
+5 to 10 photos.
+
+Purpose:
+Used in memory gallery, Pouya message section, and romantic ending.
+
+Best photo types:
+- cute couple photos
+- travel photos
+- dinner photos
+- funny selfies
+- emotional/special moments
+- natural photos with warmth
+
+Folder:
+/public/assets/episode-29/photos/pouya-ghazaal
+
+Naming:
+pouya-ghazaal-01.jpg
+
+
+3. Friends / Family Photos
+
+Needed:
+5 to 15 photos.
+
+Purpose:
+Used in Friends Message Wall and ensemble/cast feeling.
+
+Best photo types:
+- Ghazaal with friends
+- group photos
+- birthday photos
+- casual hangout photos
+- funny moments
+- family photos if suitable
+
+Folder:
+/public/assets/episode-29/photos/friends-family
+
+Naming:
+friends-family-01.jpg
+
+
+4. Memory Photos
+
+Needed:
+10 to 20 photos.
+
+Purpose:
+Used in:
+The One With The Memories
+
+Organise by category:
+- cute
+- funny
+- friends
+- us
+- iconic
+- birthday
+- travel
+
+Folder:
+/public/assets/episode-29/photos/memories
+
+Naming:
+memory-cute-01.jpg
+memory-funny-01.jpg
+memory-us-01.jpg
+memory-iconic-01.jpg
+
+
+29 REASONS COLLECTION
+
+Section:
+The One With 29 Reasons
+
+Goal:
+Create 29 reasons Pouya loves Ghazaal.
+
+Tone:
+- personal
+- romantic
+- funny
+- not generic
+- not copy-paste
+- specific to her
+
+Structure:
+Reasons 1–8:
+Cute and easy.
+
+Reasons 9–18:
+Funny, specific, inside-joke style.
+
+Reasons 19–27:
+Deeper and more emotional.
+
+Reason 28:
+Very romantic.
+
+Reason 29:
+Strongest final reason.
+
+Template:
+{
+  "number": 1,
+  "title": "Your laugh",
+  "text": "The way your laugh makes the whole room feel warmer."
+}
+
+Good reason examples:
+1. Your laugh.
+2. The way you care about people.
+3. Your smile.
+4. Your little chaotic moments.
+5. The way you make ordinary days feel special.
+6. Your main-character energy.
+7. The way you love your friends.
+8. The way you make people feel comfortable.
+9. Your soft side.
+10. Your funny side.
+11. The way you make me feel lucky.
+12. The fact that life feels better with you in it.
+
+Bad reason examples:
+1. You are nice.
+2. You are beautiful.
+3. You are good.
+4. You are cool.
+
+Those are too generic. Use real memories and details.
+
+Pouya task:
+Write rough bullet points first. They do not need to be perfect.
+Claude can polish later, but the real emotion must come from Pouya.
+
+
+FRIEND MESSAGE COLLECTION
+
+Section:
+The One With All The Friends
+
+Minimum:
+5 messages.
+
+Ideal:
+8 to 12 messages.
+
+Each friend should send:
+1. A short birthday message
+2. One favourite thing about Ghazaal
+3. Optional favourite memory
+4. Optional photo
+5. Optional voice note
+6. Optional short video
+
+Best length:
+Text message:
+2 to 5 sentences.
+
+Voice note:
+15 to 45 seconds.
+
+Video:
+10 to 30 seconds.
+
+Friend message format:
+{
+  "name": "Friend Name",
+  "relationship": "Friend",
+  "message": "Happy birthday Ghazaal...",
+  "favouriteThing": "Your kindness and chaotic energy.",
+  "memory": "That time...",
+  "photo": "/assets/episode-29/photos/friends-family/friend-name-01.jpg",
+  "voiceNote": "/assets/episode-29/audio/voice-notes/friend-name.mp3",
+  "video": "/assets/episode-29/video/friend-videos/friend-name.mp4"
+}
+
+Message to send friends:
+Hey, I’m making a surprise birthday website for Ghazaal for her 29th on July 19. It’s going to be like a Friends-style birthday episode where she is the main character.
+
+Can you send me:
+1. A short birthday message for her
+2. One favourite thing about her
+3. One funny/cute memory if you have one
+4. Optional: a 15–30 second voice note or video saying happy birthday
+
+Please don’t mention it to her. I’m trying to make it a surprise.
+
+Deadline:
+[PUT YOUR DEADLINE HERE]
+
+
+VOICE NOTES
+
+Section:
+The One With The Voice Notes
+
+Minimum:
+3 voice notes.
+
+Ideal:
+5 to 8 voice notes.
+
+Types:
+- friends saying happy birthday
+- family if appropriate
+- Pouya short voice note
+- funny fake voicemail
+- emotional voicemail
+
+Audio format:
+MP3 preferred.
+
+Folder:
+/public/assets/episode-29/audio/voice-notes
+
+Naming:
+voice-note-sara.mp3
+voice-note-maryam.mp3
+voice-note-pouya.mp3
+
+Optional fake answering machine lines:
+“Ghazaal, you have new birthday messages.”
+“Message one.”
+“End of messages.”
+
+These can be generated with text-to-speech or recorded by Pouya.
+
+
+VIDEO MESSAGES
+
+Section:
+Can appear in Friends Message Wall or Voice Notes.
+
+Minimum:
+Optional.
+
+Ideal:
+3 to 5 short videos.
+
+Length:
+10 to 30 seconds.
+
+Instruction to friends:
+Record vertical video.
+Good lighting.
+Say happy birthday.
+Keep it short and natural.
+Do not overthink it.
+
+Folder:
+/public/assets/episode-29/video/friend-videos
+
+Naming:
+friend-video-sara.mp4
+
+
+AI IMAGE / VIDEO ASSETS
+
+Section:
+The One With The Birthday Trailer
+
+Goal:
+Make it look like Ghazaal is inside a Friends birthday episode.
+
+AI reference assets needed:
+- 5 to 10 clear photos of Ghazaal
+- photos where her face is clear
+- different angles if possible
+- favourite outfit/style references
+- any photos that show her natural smile
+
+Folder:
+/public/assets/episode-29/ai/reference
+
+Naming:
+ghazaal-ai-ref-01.jpg
+ghazaal-ai-ref-02.jpg
+
+AI assets to create:
+
+1. Episode 29 Hero Poster
+Ghazaal in Friends apartment, birthday decorations, title:
+The One Where Ghazaal Turns 29
+
+2. Opening Credits Video
+15–25 seconds.
+
+3. Apartment Scene Still
+Ghazaal in the apartment with birthday cake.
+
+4. Central Perk Scene Still
+Ghazaal in coffee shop setting.
+
+5. Couch Scene
+Ghazaal on the couch with birthday balloons.
+
+6. Surprise Party Scene
+Ghazaal entering apartment, everyone celebrating.
+
+7. Final Emotional Still
+Warm closing scene.
+
+8. Episode 30 Teaser Poster
+Golden, cinematic, number 30, purple door, dramatic glow.
+
+AI prompt base:
+Create a high-quality Friends-style birthday episode still featuring Ghazaal as the main character. The scene is set in Monica and Rachel’s apartment with the purple door, yellow frame, couch, coffee table, warm sitcom lighting, birthday cake, balloons, and ensemble birthday energy. Make it look like a premium TV episode still, warm, funny, emotional, and flattering. Ghazaal should look natural, beautiful, and consistent with the reference photos.
+
+AI video prompt base:
+Animate this image like a Friends birthday episode opening scene. Add warm sitcom lighting, gentle camera movement, balloons moving slightly, candles flickering, subtle audience energy, and a joyful birthday atmosphere. Keep Ghazaal natural and consistent. End with a title-card feeling: The One Where Ghazaal Turns 29.
+
+Quality rule:
+If the AI face looks weird, do not use it.
+Bad AI ruins romance faster than a 404 page.
+
+
+AUDIO / MUSIC COLLECTION
+
+Audio is a major part of the experience.
+
+Folders:
+/public/assets/episode-29/audio/music
+/public/assets/episode-29/audio/sfx
+/public/assets/episode-29/audio/voice-notes
+
+Music needed:
+
+1. Intro Theme
+Friends theme or Friends-style intro music.
+Used in opening credits.
+
+2. Apartment Loop
+Soft cozy background loop.
+
+3. Central Perk Cafe Ambience
+Used in friends messages.
+
+4. Romantic Piano
+Used for Pouya message.
+
+5. Nostalgic Memory Music
+Used in memory gallery.
+
+6. Quiz Music
+Light playful background.
+
+7. Episode 30 Teaser Music
+Cinematic golden trailer swell.
+
+Sound effects needed:
+- TV power on
+- intro sting
+- clap
+- laugh track
+- applause
+- audience “aww”
+- card flip
+- sparkle
+- confetti pop
+- camera shutter
+- TV static
+- remote click
+- phone ring
+- answering machine beep
+- door creak
+- fridge open
+- kitchen clink
+- game ding
+- soft buzzer
+- candle flame / birthday chime
+- cinematic boom
+- final teaser sting
+
+Audio implementation rule:
+The site must ask before enabling sound:
+“Turn on episode sound?”
+Buttons:
+Yes, start the vibe
+No, silent mode
+
+Always include:
+Music On/Off
+Sound Effects On/Off
+
+
+QUIZ CONTENT
+
+Section:
+How Well Do You Know Ghazaal?
+
+Needed:
+6 to 8 questions.
+
+Each question needs:
+- question text
+- 3 or 4 answer options
+- correct answer or funny weighted result
+- feedback line
+
+Example structure:
+{
+  "question": "What would Ghazaal order at Central Perk?",
+  "options": ["Coffee", "Hot chocolate", "Cake first, drink later", "Something cute but complicated"],
+  "correctAnswer": "Something cute but complicated",
+  "feedback": "Correct. Specific, slightly dramatic, and somehow perfect."
+}
+
+Question ideas:
+1. What would Ghazaal order at Central Perk?
+2. Which Friends character energy is Ghazaal giving today?
+3. What food would instantly make her happy?
+4. What is one of her most iconic habits?
+5. What type of birthday surprise fits her best?
+6. What is one thing everyone loves about her?
+7. What kind of vibe is most Ghazaal?
+8. What would Ghazaal say in a sitcom crisis?
+
+Result ideas:
+- You clearly know the birthday queen.
+- You passed. Barely. Buy her cake immediately.
+- You are officially part of the episode.
+- You need one more season before you are ready.
+- You know Ghazaal better than the writers know Ross.
+
+
+CHARACTER MODE CONTENT
+
+Section:
+The One With Ghazaal’s Character Mode
+
+Needed:
+6 character modes.
+
+Modes:
+Rachel Mode
+Monica Mode
+Phoebe Mode
+Joey Mode
+Chandler Mode
+Ross Mode
+
+Each mode needs:
+- title
+- short description
+- visual theme
+- sound cue
+- compliment
+
+Example:
+{
+  "mode": "Rachel Mode",
+  "description": "Stylish, loved, and fully main-character coded.",
+  "compliment": "You make the room feel brighter without trying.",
+  "theme": "fashion, confidence, soft glam"
+}
+
+
+FAVOURITE THINGS CONTENT
+
+Section:
+The One With Her Favourite Things
+
+Collect:
+- favourite food
+- favourite drink
+- favourite dessert
+- favourite song
+- favourite show
+- favourite Friends character
+- favourite colour
+- favourite place
+- favourite activity
+- comfort thing
+- thing she says often
+- thing that always makes her laugh
+- cute habit
+- funny habit
+
+Presentation:
+Fridge magnets / sticky notes / Central Perk menu board.
+
+Example:
+{
+  "category": "Food that fixes everything",
+  "value": "Chocolate cake",
+  "note": "Emergency happiness protocol."
+}
+
+
+BIRTHDAY WISH CONTENT
+
+Section:
+The One With The Birthday Wish
+
+Needed:
+A short magical message.
+
+Draft:
+Make a birthday wish.
+
+I hope this year gives you even a little bit of the happiness you give everyone else.
+
+Optional:
+Add candle animation or window star click.
+
+
+POUYA FINAL MESSAGE
+
+Section:
+The One From Pouya
+
+Needed:
+One heartfelt message.
+
+Length:
+200 to 500 words.
+
+Tone:
+- sincere
+- romantic
+- warm
+- not too formal
+- not too cringe
+- slightly funny at the start
+- emotional at the end
+
+Structure:
+1. Start with “Ghazaal, this is The One Where You Turn 29.”
+2. Say a normal birthday message was not enough.
+3. Say what makes her special.
+4. Say how she makes your life better.
+5. Mention how loved she is.
+6. Wish her happy 29th.
+7. Say this is only Episode 1.
+8. Lead into Episode 30 teaser.
+
+Starter draft:
+Ghazaal,
+
+This is The One Where You Turn 29.
+
+A normal birthday message felt too small, so I made you an episode.
+
+Not because I wanted to be extra, although clearly I did, but because you deserve something that feels as warm, funny, chaotic, beautiful, and special as you are.
+
+You make ordinary days feel like memories. You make people feel loved. You make rooms feel warmer just by being in them. And somehow, even the smallest moments with you become my favourite parts of the story.
+
+I hope this year gives you the same kind of happiness you give to everyone around you.
+
+Happy 29th birthday, my love.
+
+This is not the finale.
+
+This is only the first episode.
+
+
+EPISODE 30 TEASER CONTENT
+
+Section:
+Post-Credit Scene
+
+Needed:
+Short teaser copy and optional poster/video.
+
+Main copy:
+Season 1 complete.
+
+The One Where Ghazaal Turns 29 was only the beginning.
+
+Next year, the story gets bigger, louder, funnier, sweeter, more dramatic, and even more unforgettable.
+
+Next Episode:
+The One Where Ghazaal Turns 30
+
+Coming July 19, 2027.
+
+Optional:
+Some birthday episodes need a whole year to prepare.
+
+Optional funny teaser:
+“Why, God, why?” energy loading...
+
+
+CONTENT DEADLINE PLAN
+
+Suggested timeline:
+
+Week 1:
+- collect best photos
+- write rough 29 reasons
+- ask friends for messages
+- decide music/sound approach
+
+Week 2:
+- collect friend messages
+- collect voice/video notes
+- organise photos into folders
+- write quiz questions
+- write favourite things
+- draft Pouya message
+
+Week 3:
+- generate AI images/posters/videos
+- choose final audio files
+- compress media
+- create JSON content
+- give Claude the content and flow files
+
+Final days:
+- polish text
+- test mobile
+- test audio
+- test loading speed
+- test all links
+- final emotional review
+
+
+CLAUDE INPUT AFTER STEP 3
+
+When ready, tell Claude:
+
+Use these files as the source of truth:
+1. ghazaal-birthday-series-plan.txt
+2. ghazaal-step-2-directors-cut.txt
+3. ghazaal-step-3-content-collection.txt
+
+Build the website as a modular, mobile-first, Friends-style interactive birthday episode site.
+
+Use placeholder content where final content is missing, but keep the JSON structure ready so I can replace it later.
+
+
+STEP 3 LOCKED OUTPUT
+
+At the end of Step 3, Pouya should have:
+
+- all folders created
+- photos organised
+- friend messages requested
+- 29 reasons drafted
+- quiz drafted
+- favourite things drafted
+- audio list started
+- AI reference photos selected
+- AI asset list ready
+- Pouya final message drafted
+- Episode 30 teaser copy ready
+
+Then Step 4 can begin:
+Claude build prompt / first implementation.

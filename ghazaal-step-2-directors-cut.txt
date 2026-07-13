@@ -1,0 +1,1237 @@
+Ghazaal: The Birthday Series
+Step 2 — Director’s Cut Website Flow / Episode Treatment
+
+Project:
+Ghazaal: The Birthday Series
+
+This Year:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+Release Date: 19 July 2026
+
+Next Year:
+Season 2 · Episode 30
+The One Where Ghazaal Turns 30
+Release Date: 19 July 2027
+
+
+DIRECTOR’S VISION
+
+This is not a normal birthday website.
+
+This should feel like a newly released mini Friends birthday episode where Ghazaal is introduced as the special new main character.
+
+Imagine Netflix released a short interactive special:
+Friends: The One Where Ghazaal Turns 29
+
+The website should feel like:
+- a mini episode
+- an interactive apartment
+- a birthday tribute
+- a sitcom game
+- a romantic message
+- a teaser for next year’s bigger sequel
+
+Episode 29 should feel warm, funny, personal, and magical.
+
+Episode 30 should be teased as the blockbuster sequel: bigger, louder, golden, cinematic, dramatic, emotional, with more cast/friends/family involvement.
+
+
+THE CORE EXPERIENCE
+
+Ghazaal opens the link.
+
+At first, it feels like a real episode is starting.
+
+Then she enters the Friends apartment.
+
+Then she realises the apartment is interactive.
+
+Every object leads to a different “scene” from her birthday episode.
+
+The site slowly reveals:
+- why she is loved
+- messages from friends
+- memories
+- AI scenes where she is in the Friends world
+- jokes
+- music
+- little surprises
+- Pouya’s final emotional message
+- the bigger Episode 30 teaser
+
+Final feeling:
+She should laugh, smile, feel loved, and maybe cry a little.
+
+
+MAIN EXPERIENCE MODES
+
+The site must support two modes.
+
+1. Watch Episode
+
+A guided cinematic journey.
+
+This is the recommended first experience.
+
+Flow:
+Cold Open
+Intro Sequence
+Apartment Arrival
+29 Reasons
+Friends Messages
+Memories
+AI Birthday Trailer
+Quiz
+Voice Notes
+Favourite Things
+Pouya Message
+Post-Credit Episode 30 Teaser
+
+2. Explore Apartment
+
+Free interactive mode.
+
+Ghazaal can click objects in the apartment:
+- couch
+- cake
+- coffee mug
+- TV
+- phone
+- photo frame
+- purple door
+- fridge
+- notebook
+- window
+- music speaker
+
+This allows replay and discovery after she finishes the guided episode.
+
+
+SCREEN 1 — COLD OPEN
+
+Scene Title:
+The Cold Open
+
+Director’s Intent:
+Start quietly and dramatically, like the beginning of a special TV episode.
+
+Visual:
+- black screen
+- tiny ambient TV hum
+- soft fade-in text
+- no clutter
+- cinematic but warm
+
+Text appears one by one:
+
+Ghazaal: The Birthday Series
+
+Season 1 · Episode 29
+
+The One Where Ghazaal Turns 29
+
+Starring Ghazaal
+
+Created with too much love by Pouya
+
+Button:
+Start Episode
+
+Secondary:
+Enter Apartment
+
+Sound:
+- soft TV power-on sound
+- gentle audience murmur
+- short sitcom-style intro hit
+- optional clap rhythm before the title
+- do not start loud music until user clicks
+
+Interaction:
+When she clicks Start Episode:
+- title zooms slightly
+- sound sting plays
+- screen cuts/fades into intro sequence
+
+Director note:
+Keep this clean. Do not overload the first screen. The magic is in the reveal.
+
+
+SCREEN 2 — FRIENDS-STYLE OPENING CREDITS
+
+Scene Title:
+The Opening Credits
+
+Director’s Intent:
+Make it feel like Ghazaal has officially joined the cast.
+
+Version A — With AI Video:
+Play a 15–25 second opening sequence.
+
+Shots:
+1. A fountain / night city / New York-style opening feel
+2. Ghazaal smiling or laughing
+3. Purple apartment door opening
+4. Birthday cake with 29 candles
+5. Couch scene with balloons
+6. Coffee cup on table
+7. Polaroids of Ghazaal and friends flying into frame
+8. Friends-style cast lineup with Ghazaal as the new central guest star
+9. Final title card:
+   The One Where Ghazaal Turns 29
+
+Version B — Without Video:
+Use animated title cards and image panels.
+
+Cards:
+Starring
+Ghazaal
+
+Also Starring
+Her Favourite People
+
+Special Appearance
+Pouya, trying way too hard but somehow pulling it off
+
+Episode 29
+The One Where Ghazaal Turns 29
+
+Created with
+A suspicious amount of love
+
+Sound:
+- Friends theme music or Friends-style theme
+- claps
+- upbeat 90s sitcom intro energy
+- soft audience cheering
+- optional short lyric-free theme if browser/legal/asset issues
+
+Controls:
+- Skip Intro
+- Music On/Off
+- Sound Effects On/Off
+
+Transition:
+The intro ends by zooming into the purple apartment door.
+Door opens.
+Cut to apartment homepage.
+
+
+SCREEN 3 — MAIN INTERACTIVE APARTMENT
+
+Scene Title:
+The Apartment
+
+Director’s Intent:
+This is the heart of the project. It should feel like Ghazaal is standing inside Monica and Rachel’s apartment, but everything is personalised for her birthday.
+
+Visual World:
+- purple door
+- yellow peephole frame
+- couch
+- coffee table
+- birthday cake
+- TV
+- framed photos
+- kitchen/fridge
+- coffee mugs
+- balloons
+- string lights
+- phone/answering machine
+- script notebook
+- window with city lights
+- Central Perk-style coffee corner
+
+Main On-Screen Text:
+The One Where Ghazaal Turns 29
+
+Small top label:
+Ghazaal: The Birthday Series
+Season 1 · Episode 29
+
+Prompt:
+Choose how you want to watch the episode.
+
+Buttons:
+Watch Episode
+Explore Apartment
+
+Top Controls:
+Episode Menu
+Music On/Off
+Sound Effects On/Off
+Replay Intro
+
+Apartment Objects:
+
+1. Birthday Cake
+Section:
+The One With 29 Reasons
+
+Object animation:
+Candles flicker.
+On hover, the cake glows.
+On click, candles sparkle and a soft birthday chime plays.
+
+2. Coffee Mug
+Section:
+The One With All The Friends
+
+Object animation:
+Steam rises from the mug.
+On click, cafe ambience fades in.
+
+3. Photo Frame
+Section:
+The One With The Memories
+
+Object animation:
+Photo slightly tilts.
+On click, camera shutter sound.
+
+4. TV
+Section:
+The One With The Birthday Trailer
+
+Object animation:
+TV static flickers.
+On click, remote sound and screen glow.
+
+5. Couch
+Section:
+The One From Pouya
+
+Object animation:
+Warm lamp light brightens.
+On click, music becomes softer and more romantic.
+
+6. Purple Door
+Section:
+Post-Credit Episode 30 Teaser
+
+Object animation:
+A golden light leaks from behind the door.
+On click, door creak and cinematic swell.
+
+7. Script Notebook
+Section:
+Episode Guide
+
+Object animation:
+Pages flutter.
+On click, paper open sound.
+
+8. Phone / Answering Machine
+Section:
+The One With The Voice Notes
+
+Object animation:
+Phone light blinks.
+On click, phone beep.
+
+9. Fridge / Kitchen
+Section:
+The One With Her Favourite Things
+
+Object animation:
+Fridge magnet wiggle.
+On click, kitchen/cafe sound cue.
+
+10. Coffee Table
+Section:
+How Well Do You Know Ghazaal?
+
+Object animation:
+Quiz cards shuffle.
+On click, game show ding.
+
+11. Window
+Section:
+The Birthday Wish / New York Night Moment
+
+Object animation:
+City lights shimmer.
+On click, soft magical ambience.
+
+12. Speaker / Music Icon
+Function:
+Music controller.
+
+Object animation:
+Tiny equaliser movement.
+On click, toggles music.
+
+Director note:
+The apartment should not feel like a menu. It should feel like a place. Objects should look natural in the room, but interactive once hovered or tapped.
+
+
+SECTION 1 — THE ONE WITH 29 REASONS
+
+Scene Title:
+The One With 29 Reasons
+
+Trigger:
+Birthday Cake
+
+Director’s Intent:
+This is one of the strongest romantic sections. It should feel playful at first and emotional by the end.
+
+Opening:
+The One With 29 Reasons
+
+Subtitle:
+Because one birthday message was not enough.
+
+Visual:
+A wall/table/board full of 29 cards.
+
+Card styles:
+- sticky notes
+- Polaroids
+- little birthday cards
+- coffee-shop napkins
+- script pages
+- fridge notes
+- envelope cards
+
+Interaction:
+Each card flips on click.
+
+Front:
+Reason #1
+
+Back:
+Personal reason.
+
+Progress:
+1 / 29 unlocked
+
+Sound:
+- card flip
+- tiny sparkle
+- soft piano or romantic acoustic loop
+- confetti after final card
+
+Emotion curve:
+Cards 1–8: cute and easy
+Cards 9–18: more personal and funny
+Cards 19–27: deeper and more emotional
+Card 28: very romantic
+Card 29: strongest final reason
+
+Final reveal:
+After Reason 29:
+Episode Note Unlocked
+
+Copy:
+Some people get a birthday card.
+You got a whole episode.
+
+Button:
+Continue Episode
+
+Director note:
+The 29 reasons should be rewritten later with real memories. Placeholder reasons are okay during development, but the final version must feel personal.
+
+
+SECTION 2 — THE ONE WITH ALL THE FRIENDS
+
+Scene Title:
+The One With All The Friends
+
+Trigger:
+Coffee Mug
+
+Director’s Intent:
+Make the episode feel bigger than Pouya. Her people are part of the cast.
+
+Opening:
+The One With All The Friends
+
+Subtitle:
+Everyone showed up for your episode.
+
+Visual:
+Central Perk / apartment message wall.
+
+Layout options:
+- Polaroids on string lights
+- sticky notes on apartment wall
+- coffee napkins on a table
+- birthday cards
+- voicemail cards
+- “guest star” cards
+
+Each friend card:
+From: [Name]
+Message:
+[Birthday message]
+
+Favourite thing about Ghazaal:
+[Short line]
+
+Optional:
+Photo
+Voice Note
+Video Message
+Inside Joke
+Favourite Memory
+
+Sound:
+- cafe ambience
+- soft chatter
+- card open sound
+- audience “aww” after emotional messages
+- gentle applause after final message
+
+End credits moment:
+Guest starring:
+[Friend names]
+
+Director note:
+This should feel like a cast ensemble scene. The more friends included, the more powerful this section becomes.
+
+
+SECTION 3 — THE ONE WITH THE MEMORIES
+
+Scene Title:
+The One With The Memories
+
+Trigger:
+Photo Frame
+
+Director’s Intent:
+Make this feel like a “Previously on…” montage.
+
+Opening:
+Previously on Ghazaal: The Birthday Series...
+
+Visual:
+A scrapbook / photo wall / TV slideshow hybrid.
+
+Chapters:
+Chapter 1: The Cute Ones
+Chapter 2: The Funny Ones
+Chapter 3: The Friend Ones
+Chapter 4: The Us Ones
+Chapter 5: The Iconic Ones
+Chapter 6: The Birthday Ones
+Chapter 7: The Ones That Deserve Their Own Episode
+
+Interaction:
+- click photo to enlarge
+- captions appear like episode jokes
+- swipe carousel on mobile
+- optional “shuffle memory” button
+
+Caption examples:
+This one deserves its own episode.
+Very serious behaviour. Obviously.
+Main character energy.
+A classic Ghazaal moment.
+Still one of my favourite memories.
+The writers really cooked with this scene.
+No context. Still iconic.
+
+Sound:
+- camera shutter
+- old TV transition
+- soft nostalgic music
+- gentle laugh cue for funny captions
+
+Director note:
+This should be more than a gallery. It should feel like a memory montage from a real episode.
+
+
+SECTION 4 — THE ONE WITH THE BIRTHDAY TRAILER
+
+Scene Title:
+The One With The Birthday Trailer
+
+Trigger:
+TV
+
+Director’s Intent:
+This is the “wow” section. It should look like a Netflix special promo for Ghazaal’s episode.
+
+Opening:
+The One With The Birthday Trailer
+
+Visual:
+TV screen opens into a trailer/player section.
+
+Content order:
+1. Episode 29 poster
+2. Friends-style opening credits video
+3. Apartment birthday scene with Ghazaal
+4. Central Perk birthday scene
+5. Birthday couch scene
+6. Surprise party scene
+7. Fake promo stills
+8. Episode 30 teaser image
+
+AI visual shot list:
+- Ghazaal entering the purple-door apartment
+- Ghazaal sitting on the couch with birthday cake
+- Ghazaal at Central Perk with a coffee and cake
+- Ghazaal in a group cast-style scene
+- Ghazaal laughing in the apartment kitchen
+- Ghazaal surrounded by birthday balloons
+- Ghazaal in a final warm emotional sitcom still
+- Golden teaser poster for age 30
+
+Sound:
+- TV static
+- remote click
+- short trailer music
+- audience cheer
+- Friends-style musical transition
+- final cinematic teaser hit
+
+Buttons:
+Watch Trailer
+View Episode Stills
+Continue Episode
+
+Director note:
+Use fewer, better AI visuals rather than many weird ones. Quality beats quantity. Bad AI faces are the villain.
+
+
+SECTION 5 — HOW WELL DO YOU KNOW GHAZAAL?
+
+Scene Title:
+How Well Do You Know Ghazaal?
+
+Trigger:
+Coffee Table or Watch Episode flow
+
+Director’s Intent:
+Add fun, replay, and sitcom humour.
+
+Opening:
+How Well Do You Know Ghazaal?
+
+Subtitle:
+A completely serious quiz. Obviously.
+
+Quiz length:
+6–8 questions.
+
+Question ideas:
+1. What would Ghazaal order at Central Perk?
+2. Which Friends character energy is Ghazaal giving today?
+3. What food would instantly make her happy?
+4. What is one of her most iconic habits?
+5. What type of birthday surprise fits her best?
+6. What is one thing everyone loves about her?
+7. What kind of vibe is most Ghazaal?
+8. What would Ghazaal say in a sitcom crisis?
+
+Result examples:
+You clearly know the birthday queen.
+You passed. Barely. Buy her cake immediately.
+You are officially part of the episode.
+You need one more season before you are ready.
+You know Ghazaal better than the writers know Ross.
+
+Sound:
+- correct ding
+- soft wrong buzzer
+- audience laugh
+- applause on result
+
+Director note:
+Keep it funny, not stressful. This is not the HSC. No one needs trauma from a birthday quiz.
+
+
+OPTIONAL SECTION — THE ONE WITH THE VOICE NOTES
+
+Scene Title:
+The One With The Voice Notes
+
+Trigger:
+Phone / Answering Machine
+
+Director’s Intent:
+Make the apartment feel alive. People are calling in to wish her happy birthday.
+
+Visual:
+Old answering machine / phone UI.
+
+Opening:
+You have new birthday messages.
+
+Message cards:
+Message from [Name]
+Duration: 0:23
+Play
+
+Content:
+- voice notes from friends
+- voice note from family
+- voice note from Pouya
+- optional funny fake voicemail from “the apartment”
+- optional video message links
+
+Sound:
+- phone ring
+- answering machine beep
+- tape click
+- actual voice notes
+
+Director note:
+Voice notes can be more emotional than written messages. Even 3 good ones are enough.
+
+
+OPTIONAL SECTION — THE ONE WITH GHAZAAL’S CHARACTER MODE
+
+Scene Title:
+The One With Ghazaal’s Character Mode
+
+Trigger:
+Episode Menu or Quiz Result
+
+Director’s Intent:
+A playful personality section connecting her to Friends character energy.
+
+Title:
+Which Friends Mode Is Ghazaal Today?
+
+Modes:
+
+Rachel Mode:
+Stylish, loved, and fully main-character coded.
+
+Monica Mode:
+Organised chaos, big heart, birthday queen energy.
+
+Phoebe Mode:
+Soft heart, chaotic sparkle, elite vibes.
+
+Joey Mode:
+Food motivated, lovable, and impossible not to adore.
+
+Chandler Mode:
+Funny without trying and dangerously charming.
+
+Ross Mode:
+Dramatic, iconic, and somehow still right.
+
+Interaction:
+Click a mode and the room theme slightly changes.
+Example:
+Rachel = fashion/polished
+Monica = apartment/kitchen
+Phoebe = whimsical
+Joey = food/cake
+Chandler = sarcasm/funny cards
+Ross = dramatic dinosaur-level seriousness
+
+Sound:
+- little theme sting for each mode
+- laugh cue
+- sparkle or transition
+
+Director note:
+This should feel like a fun extra, not a major emotional section.
+
+
+OPTIONAL SECTION — THE ONE WITH HER FAVOURITE THINGS
+
+Scene Title:
+The One With Her Favourite Things
+
+Trigger:
+Fridge / Kitchen
+
+Director’s Intent:
+Small, cute, personal details make the site feel like it was truly made for her.
+
+Visual:
+Fridge magnets, sticky notes, menu board, or kitchen counter.
+
+Categories:
+- favourite foods
+- favourite drinks
+- favourite songs
+- favourite shows
+- favourite colours
+- comfort things
+- little habits
+- places she likes
+- things that make her happy
+- things she says often
+
+Sound:
+- fridge open
+- kitchen clink
+- cafe sound
+- cute pop sounds
+
+Director note:
+This section is perfect for tiny inside jokes.
+
+
+OPTIONAL SECTION — THE ONE WITH THE BIRTHDAY WISH
+
+Scene Title:
+The One With The Birthday Wish
+
+Trigger:
+Window
+
+Director’s Intent:
+A quiet magical moment before the final emotional message.
+
+Visual:
+Night city outside the apartment window.
+Stars / city lights.
+Birthday candle glow.
+Soft animation.
+
+Copy:
+Make a birthday wish.
+
+Interaction:
+She clicks or taps a candle/star.
+
+Then:
+I hope this year gives you even a little bit of the happiness you give everyone else.
+
+Sound:
+- soft magical ambience
+- candle sparkle
+- gentle piano
+
+Director note:
+This can be a beautiful bridge into Pouya’s message.
+
+
+SECTION 6 — THE ONE FROM POUYA
+
+Scene Title:
+The One From Pouya
+
+Trigger:
+Couch, or near the end of Watch Episode
+
+Director’s Intent:
+Slow everything down. This is the emotional final scene before the teaser.
+
+Opening:
+The One From Pouya
+
+Reveal sequence:
+A normal birthday message felt too small.
+
+So I made you an episode.
+
+But the real reason is simple...
+
+Then full message appears.
+
+Message direction:
+- sincere
+- romantic
+- specific
+- not too long
+- not generic
+- no over-joking here
+- mention 29
+- mention she is loved
+- mention what she means to Pouya
+- mention this is Episode 1
+- lead into Episode 30
+
+Sound:
+- soft piano
+- warm room ambience
+- no laugh track
+- no buzzer
+- no chaos
+- slight emotional swell near the end
+
+Button:
+Finish Episode
+
+Director note:
+This section should feel like the final scene of a sitcom episode where the jokes stop and the heart comes through.
+
+
+SECTION 7 — POST-CREDIT SCENE / EPISODE 30 TEASER
+
+Scene Title:
+Post-Credit Scene
+
+Trigger:
+After Pouya message or Purple Door
+
+Director’s Intent:
+Make it obvious that Episode 30 is coming and will be bigger.
+
+Opening:
+Wait...
+There’s one more thing.
+
+Visual:
+- purple door
+- golden light behind the door
+- darker cinematic apartment
+- glowing number 30
+- birthday cake with 30 candle
+- dramatic city/apartment background
+- more premium Netflix-style teaser card
+
+Reveal:
+Season 2 · Episode 30
+
+The One Where Ghazaal Turns 30
+
+Coming July 19, 2027
+
+Main teaser copy:
+Season 1 complete.
+
+The One Where Ghazaal Turns 29 was only the beginning.
+
+Next year, the story gets bigger, louder, funnier, sweeter, more dramatic, and even more unforgettable.
+
+The big one is coming.
+
+Optional line:
+Some birthday episodes need a whole year to prepare.
+
+Optional turning-30 joke:
+“Why, God, why?” energy loading...
+
+Sound:
+- door creak
+- cinematic low boom
+- golden trailer swell
+- audience gasp/laugh
+- final teaser sting
+- fade to silence
+
+Buttons:
+Replay Episode 29
+Back to Apartment
+
+Director note:
+This is the cliffhanger. It should make her instantly understand that 30 is already planned.
+
+
+EPISODE 30 TEASER SEEDING THROUGHOUT THE SITE
+
+The Episode 30 teaser should not appear only at the end.
+
+Small hints should appear across the site:
+
+1. In the Apartment:
+The purple door has faint golden light.
+
+Tooltip:
+Season 2 is already in production.
+
+2. In Episode Guide:
+Episode 30 card is locked/teased.
+
+Text:
+The One Where Ghazaal Turns 30
+Coming Next Season
+
+3. After 29 Reasons:
+A tiny note:
+Reason 30 is currently under production.
+
+4. In AI Trailer:
+Show one golden teaser still.
+
+5. In Final Message:
+Mention:
+This is only Episode 1.
+
+6. In Post-Credit:
+Full reveal.
+
+Director note:
+The 30th birthday should feel intentionally planted, not randomly added at the end.
+
+
+MUSIC AND SOUNDTRACK MASTER PLAN
+
+Audio is part of the magic.
+
+Required controls:
+- Ask to enable audio after Start Episode
+- Music On/Off
+- Sound Effects On/Off
+- Optional volume slider
+- Respect browser autoplay rules
+- Never blast sound by default
+
+Global sound ideas:
+- Friends theme song or Friends-style intro track
+- 90s sitcom transition stings
+- laugh track
+- audience applause
+- audience “aww”
+- cafe ambience
+- apartment ambience
+- romantic piano
+- birthday chime
+- trailer swell
+- TV static
+- phone ring
+- answering machine beep
+- camera shutter
+- card flip
+- door creak
+- confetti pop
+- game ding
+- soft wrong buzzer
+
+Scene-specific audio:
+
+Cold Open:
+- TV hum
+- soft intro sting
+- audience murmur
+
+Intro:
+- Friends theme / Friends-inspired intro
+- clap rhythm
+- upbeat 90s sitcom track
+
+Apartment:
+- low cozy room ambience
+- occasional subtle cafe mood
+- hover/click sounds
+
+29 Reasons:
+- card flip
+- romantic instrumental
+- sparkle
+- confetti
+
+Friends Messages:
+- cafe ambience
+- message card paper sound
+- voice note playback
+- aww cue
+
+Memories:
+- camera shutter
+- VHS/TV transition
+- nostalgic music
+
+Birthday Trailer:
+- TV static
+- remote click
+- trailer music
+- applause
+
+Quiz:
+- ding
+- buzzer
+- laugh track
+- game result applause
+
+Favourite Things:
+- fridge open
+- kitchen clink
+- small pop sounds
+
+Birthday Wish:
+- candle sound
+- soft magic shimmer
+- piano
+
+Pouya Message:
+- soft piano
+- no comedy effects
+- gentle emotional ambience
+
+Episode 30 Teaser:
+- door creak
+- cinematic boom
+- golden trailer swell
+- final sting
+
+
+VISUAL STYLE MASTER PLAN
+
+Primary world:
+Friends apartment.
+
+Key colours:
+- purple door
+- yellow frame
+- warm orange couch tones
+- cream walls
+- wood tones
+- red/blue/yellow Friends title accents
+- warm lamp light
+
+Episode 29 colour mood:
+- warm
+- cozy
+- soft
+- romantic
+- colourful
+- apartment glow
+
+Episode 30 teaser colour mood:
+- gold
+- black/purple
+- cinematic
+- dramatic
+- premium
+- brighter highlights
+
+Typography:
+- Friends-style title inspiration
+- playful 90s sitcom headers
+- clean readable body font
+- handwritten accent font for notes/cards
+
+Motion:
+- soft fade
+- sitcom snap cuts
+- card flips
+- object hover glow
+- door reveal
+- TV static transition
+- Polaroid float
+- confetti
+- subtle camera zooms
+
+Mobile:
+The whole site must be excellent on phone.
+Interactive apartment should still work on mobile with tappable objects and labels.
+
+
+BUILD-READY COMPONENT LIST
+
+Claude should build these components:
+
+1. ColdOpen
+2. IntroSequence
+3. ApartmentHub
+4. InteractiveObject
+5. SoundController
+6. EpisodeMenu
+7. WatchProgress
+8. EpisodeGuide
+9. ReasonsGrid
+10. ReasonFlipCard
+11. MessageWall
+12. FriendMessageCard
+13. MemoryGallery
+14. MemoryPhotoCard
+15. TrailerSection
+16. AIStillGallery
+17. QuizSection
+18. QuizResult
+19. VoiceNotes
+20. VoiceNoteCard
+21. CharacterMode
+22. FavouriteThings
+23. BirthdayWish
+24. PouyaMessage
+25. Episode30Teaser
+26. ReplayControls
+
+
+JSON CONTENT STRUCTURE
+
+Use JSON/config-driven content so next year can be added easily.
+
+Suggested structure:
+
+{
+  "seriesTitle": "Ghazaal: The Birthday Series",
+  "season": 1,
+  "episode": 29,
+  "title": "The One Where Ghazaal Turns 29",
+  "releaseDate": "2026-07-19",
+  "nextEpisode": {
+    "season": 2,
+    "episode": 30,
+    "title": "The One Where Ghazaal Turns 30",
+    "releaseDate": "2027-07-19"
+  },
+  "sections": [
+    "coldOpen",
+    "intro",
+    "apartment",
+    "reasons",
+    "friendsMessages",
+    "memories",
+    "trailer",
+    "quiz",
+    "voiceNotes",
+    "characterMode",
+    "favouriteThings",
+    "birthdayWish",
+    "pouyaMessage",
+    "episode30Teaser"
+  ]
+}
+
+
+FINAL LOCKED STEP 2 FLOW
+
+This is the final flow to implement:
+
+Cold Open
+↓
+Start Episode
+↓
+Friends-Style Opening Credits
+↓
+Apartment Arrival
+↓
+Choose Watch Episode or Explore Apartment
+↓
+The One With 29 Reasons
+↓
+The One With All The Friends
+↓
+The One With The Memories
+↓
+The One With The Birthday Trailer
+↓
+How Well Do You Know Ghazaal?
+↓
+The One With The Voice Notes
+↓
+The One With Ghazaal’s Character Mode
+↓
+The One With Her Favourite Things
+↓
+The One With The Birthday Wish
+↓
+The One From Pouya
+↓
+Post-Credit Scene: The One Where Ghazaal Turns 30
+↓
+Replay / Back to Apartment
+
+
+FINAL DIRECTOR’S NOTE
+
+This should feel like a small real episode, not a website.
+
+Episode 29:
+Warm, personal, funny, emotional, interactive.
+
+Episode 30:
+Clearly teased as the bigger sequel.
+
+The strongest creative rule:
+Every section should answer one question:
+“Would this make Ghazaal feel like the main character of her own Friends birthday episode?”
+
+If yes, keep it.
+If no, cut it.

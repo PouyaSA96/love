@@ -1,0 +1,377 @@
+Ghazaal: The Birthday Series
+Step 3 — Couple-Only Content Plan for Episode 29
+
+Episode:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+
+Release:
+19 July 2026
+
+This version is adjusted for Episode 29 being mainly about Pouya + Ghazaal.
+Friends/family messages, bigger cast energy, and larger video involvement are saved for Episode 30.
+
+
+EPISODE 29 CONTENT STRATEGY
+
+Episode 29 should feel intimate, romantic, funny, and personal.
+
+Main cast:
+- Ghazaal
+- Pouya
+
+Supporting cast:
+- AI Friends-style world
+- apartment
+- birthday memories
+- music/sound
+- small jokes
+- Episode 30 teaser
+
+Episode 30 can become the bigger ensemble/cast episode with:
+- friends
+- family
+- voice notes
+- video messages
+- bigger AI trailer
+- more dramatic golden 30 theme
+
+
+PHOTO PLAN FOR THIS YEAR
+
+Minimum photos:
+- 12 solo photos of Ghazaal
+- 8 photos of Pouya + Ghazaal
+- 12 memory photos
+
+Ideal photos:
+- 20 solo photos of Ghazaal
+- 12 photos of Pouya + Ghazaal
+- 20 memory photos
+
+Optional:
+- 3 to 5 photos with friends only if they already fit naturally
+- otherwise save friends/family photos for Episode 30
+
+Folder placement:
+/public/assets/episode-29/photos/ghazaal-solo
+/public/assets/episode-29/photos/pouya-ghazaal
+/public/assets/episode-29/photos/memories
+
+Best photo types:
+- clear face photos
+- natural smile
+- good lighting
+- not too filtered
+- cute selfies
+- dinner/travel/date photos
+- funny candid photos
+- photos where she looks confident/happy
+- photos with emotional meaning
+
+Avoid:
+- blurry photos
+- bad lighting
+- unflattering screenshots
+- tiny faces
+- heavily filtered photos
+- random group photos that distract from her
+
+
+29 REASONS STYLE
+
+The 29 reasons should be personal and romantic, but not cringe.
+
+Mix:
+- cute reasons
+- funny reasons
+- specific habits
+- emotional reasons
+- relationship memories
+- things she does without realising
+- things only Pouya would notice
+
+Reason arc:
+1–8: cute and warm
+9–16: funny/specific
+17–24: emotional
+25–28: romantic
+29: strongest final reason
+
+Example directions:
+1. Your laugh
+2. Your smile
+3. The way you care about people
+4. The way you make normal days feel special
+5. Your little chaotic moments
+6. The way you get excited about things
+7. Your soft side
+8. Your main-character energy
+9. The way you make me laugh without trying
+10. The way you can make any place feel warmer
+11. Your cute reactions
+12. Your dramatic moments
+13. The way you make food/dates/trips more fun
+14. The way you remember little things
+15. Your kindness
+16. Your confidence
+17. The way you make me feel calm
+18. The way being with you feels like home
+19. The way you love deeply
+20. The way you support me
+21. The way your presence changes my day
+22. The way you make memories out of ordinary things
+23. The way I feel lucky around you
+24. Your heart
+25. The way I can imagine many more birthdays with you
+26. The way you are beautiful without even trying
+27. The way you are completely yourself
+28. The way loving you feels easy
+29. Because you are you, and that is my favourite thing
+
+
+QUIZ STYLE FOR COUPLE-ONLY EPISODE
+
+The quiz should feel like “How well does Pouya know Ghazaal?” or “How well do you know the birthday girl?”
+
+Best title:
+How Well Do You Know Ghazaal?
+
+Alternative:
+The Official Ghazaal Episode Quiz
+
+Use 6 to 8 questions.
+
+Question style:
+- cute
+- funny
+- relationship-specific
+- Friends-themed
+- not too hard
+- not too generic
+
+Example questions:
+1. What would Ghazaal order at Central Perk?
+2. Which Friends character energy is Ghazaal giving today?
+3. What food fixes almost everything for Ghazaal?
+4. What kind of birthday surprise fits her best?
+5. What is one of Ghazaal’s most iconic habits?
+6. What is Ghazaal most likely to do in a sitcom crisis?
+7. What is most “Ghazaal-coded”?
+8. What makes Ghazaal instantly happy?
+
+Funny result examples:
+- You clearly know the birthday queen.
+- You passed. Barely. Cake is still required.
+- You are officially part of the episode.
+- You need one more season of training.
+- You know Ghazaal better than Ross knows dinosaurs.
+
+
+FAVOURITE THINGS SECTION
+
+Use this as a cute fridge/kitchen section.
+
+Title:
+The One With Her Favourite Things
+
+Collect:
+- favourite food
+- favourite dessert
+- favourite drink
+- favourite song
+- favourite colour
+- favourite Friends character
+- favourite comfort show
+- favourite place
+- favourite activity
+- cute habit
+- funny habit
+- thing she says often
+- thing that always makes her laugh
+- thing she complains about in a cute way
+- thing she gets excited about
+
+Presentation ideas:
+- fridge magnets
+- sticky notes
+- Central Perk-style menu board
+- handwritten kitchen notes
+
+Example card style:
+Food that fixes everything:
+[Her answer]
+Emergency happiness protocol.
+
+Favourite comfort thing:
+[Her answer]
+Certified Ghazaal recovery mode.
+
+
+AI IMAGE REFERENCE PLAN
+
+Use 5 to 10 clear photos of Ghazaal.
+
+Best AI reference photos:
+- clear face
+- natural lighting
+- front-facing
+- slight side angle
+- smiling
+- different outfits
+- not overly filtered
+- high resolution
+- not sunglasses
+- not heavy shadows
+- not group photos
+
+Ideal set:
+1. clear smiling front photo
+2. clear neutral front photo
+3. side-angle photo
+4. full-body outfit photo
+5. cute candid photo
+6. dressy/nice photo
+7. casual natural photo
+8. photo with hair clearly visible
+9. bright outdoor photo
+10. indoor warm-light photo
+
+Use these for:
+- Episode 29 poster
+- apartment still
+- Central Perk still
+- couch scene
+- surprise party scene
+- final emotional still
+- Episode 30 teaser poster
+
+
+AUDIO PLAN FOR THIS YEAR
+
+For Episode 29, keep audio focused and not too much.
+
+Minimum audio files:
+1. intro theme / Friends-style intro
+2. apartment background loop
+3. romantic piano for Pouya message
+4. card flip sound
+5. camera shutter
+6. TV static / remote click
+7. phone beep
+8. door creak
+9. laugh track
+10. applause
+11. soft “aww”
+12. cinematic teaser hit for Episode 30
+
+Folder placement:
+/public/assets/episode-29/audio/music
+/public/assets/episode-29/audio/sfx
+/public/assets/episode-29/audio/voice-notes
+
+Recommended file names:
+intro-theme.mp3
+apartment-loop.mp3
+romantic-piano.mp3
+memory-music.mp3
+episode-30-teaser.mp3
+sfx-card-flip.mp3
+sfx-camera-shutter.mp3
+sfx-tv-static.mp3
+sfx-remote-click.mp3
+sfx-door-creak.mp3
+sfx-laugh.mp3
+sfx-applause.mp3
+sfx-aww.mp3
+sfx-confetti.mp3
+
+Audio UX rule:
+Ask after Start Episode:
+Turn on episode sound?
+Yes, start the vibe
+No, silent mode
+
+
+POUYA FINAL MESSAGE DIRECTION
+
+This is the main emotional moment.
+
+Tone:
+- sincere
+- romantic
+- warm
+- slightly funny at the start
+- not too formal
+- not too long
+- real
+
+Length:
+250 to 400 words.
+
+Message structure:
+1. “Ghazaal, this is The One Where You Turn 29.”
+2. A normal birthday message was not enough.
+3. Mention what makes her special.
+4. Mention how she changes your everyday life.
+5. Mention 29.
+6. Say you are lucky.
+7. Say this is only the first episode.
+8. Tease the bigger 30.
+
+Starter draft:
+Ghazaal,
+
+This is The One Where You Turn 29.
+
+A normal birthday message felt too small, so I made you an episode. Very normal behaviour from me, obviously.
+
+But honestly, I wanted to make something that feels even a little bit like you: warm, funny, beautiful, emotional, a bit dramatic in the best way, and impossible not to love.
+
+You make ordinary days feel special. You make small moments feel like memories. You make rooms warmer just by being in them. And somehow, without even trying, you have become my favourite part of the story.
+
+I love your laugh, your heart, your softness, your chaos, your kindness, and all the little things you probably do not even notice about yourself.
+
+Happy 29th birthday, my love.
+
+I hope this year gives you even a little bit of the happiness you give to the people around you.
+
+And just so you know...
+
+This is not the finale.
+
+This is only Episode 1.
+
+The big one is coming next year.
+
+
+WHAT TO SAVE FOR EPISODE 30
+
+Save these for next year:
+- friends’ full birthday messages
+- family messages
+- big video montage
+- multiple voice notes
+- larger AI cast scenes
+- real-world surprise reveal
+- 30 reasons / 30 scenes
+- bigger cinematic trailer
+- golden birthday design
+- “Why, God, why?” turning-30 joke sequence
+- larger Episode 30 website sections
+
+
+STEP 3 ACTION LIST FOR POUYA NOW
+
+1. Add this file to /docs.
+2. Create the asset folders.
+3. Choose 20 solo photos of Ghazaal.
+4. Choose 10–12 photos of you and Ghazaal.
+5. Choose 15–20 memory photos.
+6. Pick 5–10 best clear photos for AI reference.
+7. Draft rough 29 reasons.
+8. List her favourite things.
+9. Draft 6–8 quiz questions.
+10. Collect 10–15 audio files.
+11. Write or edit Pouya final message.
+12. Then start Step 4: Claude build prompt.

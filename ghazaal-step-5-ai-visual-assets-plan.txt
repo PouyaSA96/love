@@ -1,0 +1,260 @@
+Ghazaal: The Birthday Series
+Step 5 — AI Visual Assets Plan
+
+Episode:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+
+Goal:
+Upgrade the AI section without breaking the already-good V1 site.
+
+Important:
+Do not generate too many AI assets. Use a small number of high-quality images/videos.
+Bad AI faces ruin the magic. Quality beats quantity.
+
+
+CURRENT AI STRATEGY
+
+For Episode 29, create only 5 core AI assets:
+
+1. Episode 29 Hero Poster
+2. Friends Apartment Birthday Scene
+3. Central Perk Birthday Scene
+4. Couch Birthday Scene
+5. Episode 30 Golden Teaser Poster
+
+Optional later:
+6. Short intro/opening credits video
+7. Short animated birthday trailer
+8. One final emotional still
+
+
+AI REFERENCE PHOTOS
+
+Choose 10 photos from:
+/public/assets/episode-29/photos/ghazaal-solo
+
+Best reference set:
+1. clear smiling front photo
+2. clear neutral front photo
+3. slight side-angle photo
+4. full-body outfit photo
+5. dressy/nice photo
+6. casual natural photo
+7. warm indoor photo
+8. bright outdoor photo
+9. photo where her hair is clear
+10. photo where her face is sharp and not filtered
+
+Do not use childhood photos as AI face references.
+Childhood photos are only for Memory Gallery.
+
+
+OUTPUT FOLDER STRUCTURE
+
+Place generated assets here:
+
+/public/assets/episode-29/ai/generated-images
+/public/assets/episode-29/ai/generated-videos
+/public/assets/episode-29/ai/posters
+/public/assets/episode-29/ai/episode-stills
+/public/assets/episode-29/ai/teasers
+
+Recommended filenames:
+
+episode-29-hero-poster.png
+episode-29-apartment-scene.png
+episode-29-central-perk-scene.png
+episode-29-couch-birthday-scene.png
+episode-30-golden-teaser.png
+
+If videos:
+episode-29-intro-video.mp4
+episode-29-birthday-trailer.mp4
+episode-30-teaser-video.mp4
+
+
+QUALITY RULES
+
+Use an AI output only if:
+- Ghazaal looks natural
+- face is not distorted
+- hands are not terrible
+- eyes look normal
+- the scene feels warm and flattering
+- it looks premium, not cheap
+- it fits the Friends birthday episode world
+
+Reject immediately if:
+- face looks uncanny
+- smile looks fake/weird
+- too many fingers
+- bad text in image
+- wrong age
+- wrong ethnicity/face structure
+- looks like a random person
+- too sexualised
+- too cartoonish unless intended
+
+
+PROMPT 1 — EPISODE 29 HERO POSTER
+
+Create a premium Friends-style birthday episode poster for “The One Where Ghazaal Turns 29”.
+
+Ghazaal is the main character and special guest star of the episode. She is in Monica and Rachel’s apartment, decorated for her 29th birthday, with the purple door, yellow peephole frame, couch, coffee table, birthday cake, balloons, warm sitcom lighting, and cozy 90s apartment energy.
+
+Make the poster feel like a real TV episode promotional poster: warm, funny, romantic, nostalgic, polished, cinematic but still sitcom-like.
+
+Ghazaal should look natural, beautiful, flattering, and consistent with the provided reference photos.
+
+Include title-card space for:
+“The One Where Ghazaal Turns 29”
+
+Mood:
+warm, cute, emotional, romantic, funny, premium, Friends birthday episode energy.
+
+
+PROMPT 2 — FRIENDS APARTMENT BIRTHDAY SCENE
+
+Create a realistic high-quality TV episode still of Ghazaal inside Monica and Rachel’s Friends apartment during her 29th birthday episode.
+
+The apartment has the purple door, yellow frame, couch, coffee table, birthday cake, balloons, warm lamps, kitchen in the background, and cozy sitcom lighting.
+
+Ghazaal is smiling naturally and looks like the main character of the birthday scene. The mood is joyful, romantic, warm, and personal.
+
+Make it look like a still from a premium 90s sitcom birthday episode.
+
+Avoid distorted face, bad hands, weird text, or unnatural expressions.
+
+
+PROMPT 3 — CENTRAL PERK BIRTHDAY SCENE
+
+Create a warm Central Perk-style coffee shop birthday scene featuring Ghazaal as the main character.
+
+She is sitting in a cozy coffee shop with an orange couch, coffee cups, birthday cake, soft warm lights, and nostalgic Friends-style cafe atmosphere.
+
+The scene should feel like a birthday moment from a classic sitcom: funny, cozy, romantic, social, and cinematic.
+
+Ghazaal should look natural, beautiful, and consistent with the provided reference photos.
+
+No weird facial distortion. No bad hands. No random text.
+
+
+PROMPT 4 — COUCH BIRTHDAY SCENE
+
+Create a cozy Friends apartment couch birthday scene featuring Ghazaal.
+
+Ghazaal is sitting on the couch with a birthday cake and balloons around her. The purple door and yellow frame are visible in the background. Warm apartment lighting, coffee table, candles, and sitcom birthday atmosphere.
+
+Make it feel like the emotional final scene of a birthday episode: warm, romantic, funny, soft, and memorable.
+
+Ghazaal should look natural and flattering.
+
+
+PROMPT 5 — EPISODE 30 GOLDEN TEASER POSTER
+
+Create a cinematic golden teaser poster for the next episode:
+“The One Where Ghazaal Turns 30”
+
+Visual:
+A dramatic Friends apartment-inspired purple door slightly open with golden light coming through. A glowing number 30 appears in the scene. Birthday cake with 30 candle. Warm but cinematic lighting. Premium sequel energy.
+
+Mood:
+bigger, golden, dramatic, romantic, funny, mysterious, coming-next-season energy.
+
+Text space:
+Season 2 · Episode 30
+The One Where Ghazaal Turns 30
+Coming July 19, 2027
+
+This should feel like a post-credit teaser for a bigger birthday sequel.
+
+
+VIDEO PROMPT — INTRO / OPENING CREDITS
+
+Animate the Episode 29 hero poster as a short Friends-style birthday opening credits clip.
+
+Duration:
+10 to 20 seconds.
+
+Motion:
+- soft camera movement
+- warm apartment lights turning on
+- balloons gently moving
+- candles flickering
+- Polaroids floating into frame
+- Ghazaal smiling naturally
+- final title card feeling:
+  The One Where Ghazaal Turns 29
+
+Mood:
+upbeat, 90s sitcom intro, warm, romantic, funny, celebratory.
+
+Use friends-theme.mp3 in the website as the intro audio.
+
+
+VIDEO PROMPT — BIRTHDAY TRAILER
+
+Create a short cinematic birthday trailer for:
+The One Where Ghazaal Turns 29
+
+Use the generated stills as references:
+- apartment scene
+- Central Perk scene
+- couch birthday scene
+- memory/photo montage feeling
+- final title card
+
+Duration:
+15 to 30 seconds.
+
+Mood:
+Friends-style birthday episode trailer, warm, romantic, funny, personal, premium.
+
+End with:
+Season 1 · Episode 29
+The One Where Ghazaal Turns 29
+
+
+WEBSITE INTEGRATION
+
+Once assets are ready, update the AI section to use:
+
+/assets/episode-29/ai/posters/episode-29-hero-poster.png
+/assets/episode-29/ai/episode-stills/episode-29-apartment-scene.png
+/assets/episode-29/ai/episode-stills/episode-29-central-perk-scene.png
+/assets/episode-29/ai/episode-stills/episode-29-couch-birthday-scene.png
+/assets/episode-29/ai/teasers/episode-30-golden-teaser.png
+
+If the code currently expects /public paths, use the existing publicUrl helper.
+
+
+CLAUDE PROMPT TO INTEGRATE AI ASSETS
+
+Use this once the files exist:
+
+The AI assets are now added under /public/assets/episode-29/ai.
+
+Please update the Birthday Trailer / AI Showcase section to use these real files instead of placeholders:
+
+- /public/assets/episode-29/ai/posters/episode-29-hero-poster.png
+- /public/assets/episode-29/ai/episode-stills/episode-29-apartment-scene.png
+- /public/assets/episode-29/ai/episode-stills/episode-29-central-perk-scene.png
+- /public/assets/episode-29/ai/episode-stills/episode-29-couch-birthday-scene.png
+- /public/assets/episode-29/ai/teasers/episode-30-golden-teaser.png
+
+Keep the section cinematic and polished.
+Do not break existing navigation/audio.
+Use the publicUrl helper if paths start with /public.
+Keep placeholders only for missing video files.
+
+
+FINAL AI RULE
+
+Do not let the AI section delay the rest of the site.
+
+The site should work without AI assets.
+
+AI assets are enhancement, not foundation.
+
+Episode 29 needs 5 beautiful images more than 50 average ones.
